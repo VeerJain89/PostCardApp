@@ -2,32 +2,18 @@ var constants = {
 	
 	// controllers name
 	LoginController : 'LoginController',
-	ChallengeController : 'ChallengeController',
+	CreateCardController : 'CreateCardController',
 	HomeController : "HomeController",
 	HowController : "HowController",
 	OpportunityController : "OpportunityController",
 	PortfolioController : "PortfolioController",
 	
 	// view name
-	OpportunityView: 'Opportunity',
-	AFGExpectationView: 'AFGExpectation',
-	CapitalExpenditureView: 'CapitalExpenditure',
-	FundamentalMergerView: 'FundamentalMerger',
-	PrincipalChallengeView: 'PrincipalChallenge',
-	PortfolioView: 'Portfolio',
-	AnalysisView: 'Analysis',
-	RolesView: 'Roles',
-	OverviewView: 'Overview',
-	MALifeCycleView: 'MALifeCycle',
-	ToolsView: 'Tools',
-	QualificationView: 'Qualification',
-	HomeView: 'Home',
-	ProjectLandingView: 'Landing',
-	StatusQuoView: 'StatusQuo',
-	HoldingCompanyView:'HoldingCompany',
-	TakeOverView:'TakeOver',
-	BestOfBothView:'BestOfBoth',
-	ValueCaptureView:'ValueCapture',
+	CreateCardView: 'Opportunity',
+	EditImageView: 'AFGExpectation',
+	WriteMsgView: 'CapitalExpenditure',
+	PreviewView: 'FundamentalMerger',
+
 	// core page constants
 	controllerPath : 'app/controllers/',
 	

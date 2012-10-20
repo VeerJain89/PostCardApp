@@ -52,7 +52,7 @@ var APP = {
 		/**
 		 * Entry point logic for app here
 		 */
-		var LoginController = require(APP.Constants.controllerPath + APP.Constants.LoginController);
+		var LoginController = require(APP.Constants.controllerPath + APP.Constants.HomeController);
 		APP.currentController = new LoginController();
 		APP.masterWindow.add(APP.currentController.UI.wrapper);	
 		APP.masterWindow.open();

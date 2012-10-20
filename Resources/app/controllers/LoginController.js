@@ -1,8 +1,6 @@
 // Module dependencies
 var APP = require('core');
 var UI = require('app/ui/login/login');
-var Header = require('modules/Header');
-var TabBar = require('modules/tabBar');
 /**
  * Login controller module
  * @constructor
@@ -17,14 +15,12 @@ function LoginController() {
      */
     this.UI = new UI();
 	
-	var HeaderUI = new Header();
-	APP.masterWindow.add(HeaderUI.headerView);
-	
+	APP.header.signInButton.visible=false;
+	APP.header.backButton.visible=true;
+	APP.tabBar.tabBarView.visible=false;
 	
 	this.UI.signInButton.addEventListener('click',function(){
-		var TabBarUI = new TabBar();
-		APP.masterWindow.add(TabBarUI.tabBarView);
-		//APP.navigationObserver();
+		
 	});
     // Handle events
     // this.UI.submit.addEventListener('singletap', function() {

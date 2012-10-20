@@ -1,4 +1,5 @@
 // Module dependencies
+var APP = require('core');
 var Styles = {
 
 };
@@ -15,7 +16,8 @@ function tabBarUI() {"use strict";
 		left : 0,
 		width : 320,
 		height : 50,
-		layout : 'horizontal'
+		layout : 'horizontal',
+		zIndex:40
 	});
 
 	this.createCardTab = Ti.UI.createView({
@@ -54,6 +56,7 @@ function tabBarUI() {"use strict";
 
 	this.createCardTab.addEventListener('click', function(e) {
 		if (e.source.id != self.selectedTabId) {
+			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.CreateCardView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
 			e.source.backgroundImage = 'app/assets/tabCreateCardP.png';
@@ -62,6 +65,7 @@ function tabBarUI() {"use strict";
 
 	this.editImageTab.addEventListener('click', function(e) {
 		if (e.source.id != self.selectedTabId) {
+			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.EditImageView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
 			e.source.backgroundImage = 'app/assets/tabEditImageP.png';
@@ -70,6 +74,7 @@ function tabBarUI() {"use strict";
 
 	this.writeMsgTab.addEventListener('click', function(e) {
 		if (e.source.id != self.selectedTabId) {
+			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.WriteMsgView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
 			e.source.backgroundImage = 'app/assets/tabWriteMsgP.png';
@@ -78,6 +83,7 @@ function tabBarUI() {"use strict";
 
 	this.previewTab.addEventListener('click', function(e) {
 		if (e.source.id != self.selectedTabId) {
+			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.PreviewView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
 			e.source.backgroundImage = 'app/assets/tabPreviewP.png';

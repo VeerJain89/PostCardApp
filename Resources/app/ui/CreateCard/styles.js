@@ -4,9 +4,9 @@
  */
 var Styles = {
 	wrapper : {
-        top:0,
+        top:50,
         layout : 'vertical',
-        width:320,
+        width:310,
         backgroundColor:'white'
     },
 	headerText : {
