@@ -6,7 +6,6 @@ var WriteMsgUI =require('app/ui/CreateCard/writeMsg');
 var PreviewUI =require('app/ui/CreateCard/preview');
 var httpHelper = require('/modules/http');
 var Header = require('modules/Header');
-
 /**
  * Project controller module
  * @constructor

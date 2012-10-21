@@ -5,13 +5,14 @@ var constants = {
 	CreateCardController : 'CreateCardController',
 	HomeController : "HomeController",
 	CreateAccountController : "CreateAccountController",
+	AddAddressController:'AddAddressController',
 	
 	// view name
 	CreateCardView: 'CreateCardView',
 	EditImageView: 'EditImageView',
 	WriteMsgView: 'WriteMsgView',
 	PreviewView: 'PreviewView',
-
+	AddAddressView: 'AddAddressView',
 	// core page constants
 	controllerPath : 'app/controllers/',
 	

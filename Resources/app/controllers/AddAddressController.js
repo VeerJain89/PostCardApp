@@ -1,11 +1,11 @@
 // Module dependencies
 var APP = require('core');
-var UI = require('app/ui/CreateAccount/createAccount');
+var UI = require('app/ui/CreateCard/addAddress');
 /**
  * Login controller module
  * @constructor
  */
-function CreateAccountController() {
+function AddAddressController() {
     "use strict";
     var self = this;
     // Obligatory 'this' reference
@@ -18,10 +18,7 @@ function CreateAccountController() {
 	APP.header.signInButton.visible=false;
 	APP.header.backButton.visible=true;
 	APP.tabBar.tabBarView.visible=false;
-	
-	this.UI.createAccountButton.addEventListener('click',function(){
-		APP.navigationObserver(APP.Constants.AddAddressController);
-	});
+
 }
 
-module.exports = CreateAccountController;
+module.exports = AddAddressController;
