@@ -1,11 +1,11 @@
 // Module dependencies
 var APP = require('core');
-var UI = require('app/ui/login/login');
+var UI = require('app/ui/CreateAccount/createAccount');
 /**
  * Login controller module
  * @constructor
  */
-function LoginController() {
+function CreateAccountController() {
     "use strict";
     var self = this;
     // Obligatory 'this' reference
@@ -19,9 +19,9 @@ function LoginController() {
 	APP.header.backButton.visible=true;
 	APP.tabBar.tabBarView.visible=false;
 	
-	this.UI.createNewButton.addEventListener('click',function(){
-		APP.navigationObserver(APP.Constants.CreateAccountController);
+	this.UI.createAccountButton.addEventListener('click',function(){
+		
 	});
 }
 
-module.exports = LoginController;
+module.exports = CreateAccountController;

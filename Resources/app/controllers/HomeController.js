@@ -13,12 +13,16 @@ function HomeController(displayView) {"use strict";
 
 	this.UI = new UI();
 
+	if (APP.tabBar) {
+		APP.masterWindow.remove(APP.tabBar.tabBarView);
+		APP.tabBar.tabBarView=null;
+		APP.tabBar=null;
+	}
+	
 	this.UI.createCardView.addEventListener('click', function() {
-		if (!APP.tabBar) {
 			var TabBarUI = new TabBar();
 			APP.masterWindow.add(TabBarUI.tabBarView);
 			APP.tabBar = TabBarUI;
-		}
 		APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.CreateCardView);
 	});
 

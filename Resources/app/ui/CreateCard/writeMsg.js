@@ -16,7 +16,18 @@ function WriteMsg() {"use strict";
      * @type {Object}
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
-    this.wrapper.backgroundColor = 'orange';
+    
+	this.writeMsgLabel = Ti.UI.createLabel({
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Write Message'
+	});
+	
+	this.wrapper.add(this.writeMsgLabel);
 }
 
 module.exports = WriteMsg;

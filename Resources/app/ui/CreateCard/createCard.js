@@ -16,8 +16,18 @@ function CreateCard() {"use strict";
      * @type {Object}
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
-	this.wrapper.backgroundColor = 'red';
+    
+	this.createCardLabel = Ti.UI.createLabel({
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Create Card'
+	});
 	
+	this.wrapper.add(this.createCardLabel);
 }
 
 module.exports = CreateCard;
