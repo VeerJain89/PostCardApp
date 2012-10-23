@@ -100,7 +100,7 @@ var Styles = {
 		},
 		text : 'Preview Card'
 	},
-	editImageLabel : {
+	editImageText : {
 		top : 10,
 		left : 10,
 		color : 'orange',

@@ -17,9 +17,9 @@ function EditImage() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
     
-	this.editImageLabel = Ti.UI.createLabel(Styles.editImageLabel);
+	this.editImageText = Ti.UI.createLabel(Styles.editImageText);
 	
-	this.wrapper.add(this.editImageLabel);
+	this.wrapper.add(this.editImageText);
 }
 
 module.exports = EditImage;
