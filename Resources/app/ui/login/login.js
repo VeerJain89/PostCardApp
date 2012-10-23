@@ -14,64 +14,21 @@ function LoginUI() {"use strict";
 	 */
 	this.wrapper = Ti.UI.createView(Styles.wrapper);
 
-	this.myAccountLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'My Account'
-	});
+	this.myAccountLabel = Ti.UI.createLabel(Styles.myAccountLabel);
 
-	this.emailLabel = Ti.UI.createLabel({
-		top : 30,
-		left : 20,
-		text : 'Email Address'
-	})
+	this.emailLabel = Ti.UI.createLabel(Styles.emailLabel);
 
-	this.emailText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 5,
-		width : 280,
-		height : 30
-	});
+	this.emailText = Ti.UI.createTextField(Styles.emailText);
 
-	this.passwordLabel = Ti.UI.createLabel({
-		top : 5,
-		left : 20,
-		text : 'Email Address'
-	})
+	this.passwordLabel = Ti.UI.createLabel(Styles.passwordLabel);
 
-	this.passwordText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 5,
-		width : 280,
-		height : 30
-	});
+	this.passwordText = Ti.UI.createTextField(Styles.passwordText);
 
-	this.signInButton = Ti.UI.createButton({
-		top : 10,
-		width : 220,
-		height : 30,
-		backgroundImage : 'app/assets/button.png',
-		title : 'Sign In'
-	});
+	this.signInButton = Ti.UI.createButton(Styles.signInButton);
 	
-	this.separator = Ti.UI.createImageView({
-		backgroundImage:'app/assets/separator.png',
-		height:6,
-		width:300,
-		top:10
-	});
+	this.separator = Ti.UI.createImageView(Styles.separator);
 	
-	this.createNewButton = Ti.UI.createButton({
-		top : 10,
-		width : 220,
-		height : 30,
-		backgroundImage : 'app/assets/button.png',
-		title : 'Create New Account'
-	});
+	this.createNewButton = Ti.UI.createButton(Styles.createNewButton);
 	
 	this.wrapper.add(this.myAccountLabel);
 	this.wrapper.add(this.emailLabel);

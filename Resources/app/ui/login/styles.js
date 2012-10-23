@@ -10,50 +10,57 @@ var Styles = {
         backgroundColor:'white',
         bottom:10
     },
-    logo : {
-        image : 'app/assets/deloitteLogo.png',
-        height : 83,
-        top : 98
-    },
-    welcome : {
-        height : 40,
-        top : 15,
-        text : 'Welcome, please login.',
-        color:'#666666',
-        font:{
-            fontSize:18
-        }
-    },
-    textField : {
-        backgroundImage:'app/assets/loginFields.png',
-        width : '46%',
-        height : 42,
-        top : 10,
-        textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-        autocorrect : false,
-        autocapitalization: false
-    },
-    pwdField : {
-        backgroundImage:'app/assets/loginFields.png',
-        width : '46%',
-        height : 42,
-        top : 10,
-        textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-        autocorrect : false,
-        autocapitalization: false,
-        passwordMask: true
-    },
-    submit : {
-        title : 'login',
-        backgroundImage:'app/assets/loginButtonN.png',
-        backgroundSelectedImage:'app/assets/loginButtonP.png',
-        width : '17%',
-        height : 42,
-        top : 28,
-        font:{
-            fontSize:18
-        }
-    }
+    myAccountLabel:{
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'My Account'
+	},
+    emailLabel:{
+		top : 30,
+		left : 20,
+		text : 'Email Address'
+	},
+    emailText:{
+		backgroundImage : 'app/assets/textBox.png',
+		top : 5,
+		width : 280,
+		height : 30
+	},
+    passwordLabel:{
+		top : 5,
+		left : 20,
+		text : 'Email Address'
+	},
+    passwordText:{
+		backgroundImage : 'app/assets/textBox.png',
+		top : 5,
+		width : 280,
+		height : 30
+	},
+    signInButton:{
+		top : 10,
+		width : 220,
+		height : 30,
+		backgroundImage : 'app/assets/button.png',
+		title : 'Sign In'
+	},
+    separator:{
+		backgroundImage:'app/assets/separator.png',
+		height:6,
+		width:300,
+		top:10
+	},
+    createNewButton:{
+		top : 10,
+		width : 220,
+		height : 30,
+		backgroundImage : 'app/assets/button.png',
+		title : 'Create New Account'
+	},
 };
 
 module.exports = Styles; 

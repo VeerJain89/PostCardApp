@@ -17,40 +17,15 @@ function Home() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
 	
-	this.headerView = Ti.UI.createView({
-		backgroundImage:'app/assets/header.png',
-		top:0,
-		height:50,
-		width:320
-	});
+	this.headerView = Ti.UI.createView(Styles.headerView);
 	
-	this.descriptionImage= Ti.UI.createImageView({
-		backgroundImage:'app/assets/descriptionImage.png',
-		width:Ti.UI.FILL,
-		height:120,
-		top:20
-	});
+	this.descriptionImage= Ti.UI.createImageView(Styles.descriptionImage);
 	
-	this.createCardView = Ti.UI.createView({
-		top:10,
-		backgroundImage:'app/assets/createCard.png',
-		height:50,
-		width:260
-	});
+	this.createCardView = Ti.UI.createView(Styles.createCardView);
 	
-	this.postBoxView = Ti.UI.createView({
-		top:10,
-		backgroundImage:'app/assets/viewPostBox.png',
-		height:50,
-		width:260
-	});
+	this.postBoxView = Ti.UI.createView(Styles.postBoxView);
 	
-	this.checkAccountView = Ti.UI.createView({
-		top:10,
-		backgroundImage:'app/assets/checkAccount.png',
-		height:50,
-		width:260
-	});
+	this.checkAccountView = Ti.UI.createView(Styles.checkAccountView);
 	
 	this.wrapper.add(this.headerView);
 	this.wrapper.add(this.descriptionImage);

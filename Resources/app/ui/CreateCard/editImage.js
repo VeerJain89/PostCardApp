@@ -17,15 +17,7 @@ function EditImage() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
     
-	this.editImageLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Edit Image'
-	});
+	this.editImageLabel = Ti.UI.createLabel(Styles.editImageLabel);
 	
 	this.wrapper.add(this.editImageLabel);
 }

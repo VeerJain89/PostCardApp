@@ -1,5 +1,5 @@
 // Module dependencies
-//var Styles = require('app/ui/login/styles');
+var Styles = require('app/ui/CreateCard/addressStyles');
 var APP = require('core');
 
 /**
@@ -12,95 +12,27 @@ function AddAddressUI() {"use strict";
 	 * The main view for this screen
 	 * @type {Object}
 	 */
-	this.wrapper = Ti.UI.createView({
-        top:50,
-        layout : 'vertical',
-        width:310,
-        backgroundColor:'white',
-        height:400
-    });
+	this.wrapper = Ti.UI.createView(Styles.wrapper);
 
-	this.addAddressLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Add Address'
-	});
+	this.addAddressLabel = Ti.UI.createLabel(Styles.addAddressLabel);
 	
-	this.fNameText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'First Name'
-	});
+	this.fNameText = Ti.UI.createTextField(Styles.fNameText);
 	
-	this.lNameText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'Last Name'
-	});
+	this.lNameText = Ti.UI.createTextField(Styles.lNameText);
 	
-	this.address1Text = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'Address Line 1'
-	});
+	this.address1Text = Ti.UI.createTextField(Styles.address1Text);
 
-	this.address2Text = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'Address Line 2'
-	});
+	this.address2Text = Ti.UI.createTextField(Styles.address2Text);
 	
-	this.address3Text = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'Address Line 3'
-	});
+	this.address3Text = Ti.UI.createTextField(Styles.address3Text);
 	
-	this.cityText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'City'
-	});
+	this.cityText = Ti.UI.createTextField(Styles.cityText);
 	
-	this.stateText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'State'
-	});
+	this.stateText = Ti.UI.createTextField(Styles.stateText);
 	
-	this.zipText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 7,
-		width : 280,
-		height : 30,
-		hintText:'Postal/Zip Code'
-	});
+	this.zipText = Ti.UI.createTextField(Styles.zipText);
 	
-	this.nextButton = Ti.UI.createButton({
-		top:10,
-		width : 220,
-		height : 30,
-		backgroundImage : 'app/assets/button.png',
-		title : 'Next'
-	});
+	this.nextButton = Ti.UI.createButton(Styles.nextButton);
 
 	this.wrapper.add(this.addAddressLabel);
 	this.wrapper.add(this.fNameText);

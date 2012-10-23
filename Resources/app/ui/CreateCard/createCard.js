@@ -17,53 +17,19 @@ function CreateCard() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
     
-	this.createCardLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Create Card'
-	});
+	this.createCardLabel = Ti.UI.createLabel(Styles.createCardLabel);
 	
-	this.cardImageView = Ti.UI.createView({
-		backgroundColor:'#666666',
-		width:290,
-		height:180,
-		top:10
-	});
+	this.cardImageView = Ti.UI.createView(Styles.cardImageView);
 	
-	this.imageOptionView = Ti.UI.createView({
-		height:120,
-		width:280
-	});
+	this.imageOptionView = Ti.UI.createView(Styles.imageOptionView);
 	
-	this.editImageView = Ti.UI.createView({
-		left:30,
-		height:60,
-		width:58,
-		backgroundImage : 'app/assets/editImage.png'
-	});
+	this.editImageView = Ti.UI.createView(Styles.editImageView);
 	
-	this.editImageLabel = Ti.UI.createLabel({
-		top:90,
-		left:25,
-		text:'Edit Image'
-	});
+	this.editImageLabel = Ti.UI.createLabel(Styles.editImageLabel);
 	
-	this.changeImageView = Ti.UI.createView({
-		left:125,
-		height:60,
-		width:151,
-		backgroundImage : 'app/assets/changeImage.png'
-	});
+	this.changeImageView = Ti.UI.createView(Styles.changeImageView);
 	
-	this.changeImageLabel = Ti.UI.createLabel({
-		top:90,
-		left:145,
-		text:'Change Image'
-	});
+	this.changeImageLabel = Ti.UI.createLabel(Styles.changeImageLabel);
 	
 	this.imageOptionView.add(this.editImageView);
 	this.imageOptionView.add(this.editImageLabel);

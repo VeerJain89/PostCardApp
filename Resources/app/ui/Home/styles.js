@@ -9,60 +9,36 @@ var Styles = {
         width:320,
         backgroundColor:'white'
     },
-	headerText : {
-		top : 80,
-		left : 80,
-		text : 'SELECT A PROJECT TO GET STARTED',
-		font : {
-			fontSize : 30
-		},
-		color : '#717171'
+    headerView:{
+		backgroundImage:'app/assets/header.png',
+		top:0,
+		height:50,
+		width:320
 	},
-	projectCellView : {
-		width : 260,
-		height : 130,
-		borderRadius : 10		
+    descriptionImage:{
+		backgroundImage:'app/assets/descriptionImage.png',
+		width:Ti.UI.FILL,
+		height:120,
+		top:20
 	},
-	projectHeader : {
-		text : 'PROJECT',
-		font : {
-			fontSize : 25
-		},
-		color : '#FFFFFF',
-		top : 20,
-		left : 40,
-        touchEnabled:false
+    createCardView:{
+		top:10,
+		backgroundImage:'app/assets/createCard.png',
+		height:50,
+		width:260
 	},
-	projectTitle : {
-		text : 'ABC',
-		font : {
-			fontSize : 30,
-			fontWeight : 'bold'
-		},
-		color : '#FFFFFF',
-		top : 50,
-		left : 40,
-		touchEnabled:false
+    postBoxView:{
+		top:10,
+		backgroundImage:'app/assets/viewPostBox.png',
+		height:50,
+		width:260
 	},
-	bottomBar : {
-		width : '100%',
-		backgroundColor : 'black',
-		bottom : 0,
-		height : 40,
-		backgroundGradient : {
-			type : 'linear',
-			colors : ['#000001', '#666666'],
-			startPoint : {
-				x : 0,
-				y : 0
-			},
-			endPoint : {
-				x : 550,
-				y : 550
-			},
-			backFillStart : false
-		}
-	}
+    checkAccountView:{
+		top:10,
+		backgroundImage:'app/assets/checkAccount.png',
+		height:50,
+		width:260
+	},
 };
 
 module.exports = Styles;

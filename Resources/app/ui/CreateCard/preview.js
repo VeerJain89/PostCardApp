@@ -17,15 +17,7 @@ function Preview() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
     
-	this.previewLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Preview Card'
-	});
+	this.previewLabel = Ti.UI.createLabel(Styles.previewLabel);
 	
 	this.wrapper.add(this.previewLabel);
 }

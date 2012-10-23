@@ -1,5 +1,5 @@
 // Module dependencies
-//var Styles = require('app/ui/login/styles');
+var Styles = require('app/ui/createAccount/styles');
 var APP = require('core');
 
 /**
@@ -12,81 +12,25 @@ function CreateAccountUI() {"use strict";
 	 * The main view for this screen
 	 * @type {Object}
 	 */
-	this.wrapper = Ti.UI.createView({
-        top:50,
-        layout : 'vertical',
-        width:310,
-        backgroundColor:'white',
-        height:400
-    });
+	this.wrapper = Ti.UI.createView(Styles.wrapper);
 
-	this.createAccountLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Create Account'
-	});
+	this.createAccountLabel = Ti.UI.createLabel(Styles.createAccountLabel);
 	
-	this.fNameText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 10,
-		width : 280,
-		height : 30,
-		hintText:'First Name'
-	});
+	this.fNameText = Ti.UI.createTextField(Styles.fNameText);
 	
-	this.lNameText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 10,
-		width : 280,
-		height : 30,
-		hintText:'Last Name'
-	});
+	this.lNameText = Ti.UI.createTextField(Styles.lNameText);
 	
-	this.emailText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 10,
-		width : 280,
-		height : 30,
-		hintText:'Email Address'
-	});
+	this.emailText = Ti.UI.createTextField(Styles.emailText);
 
-	this.passwordText = Ti.UI.createTextField({
-		backgroundImage : 'app/assets/textBox.png',
-		top : 10,
-		width : 280,
-		height : 30,
-		hintText:'Password'
-	});
+	this.passwordText = Ti.UI.createTextField(Styles.passwordText);
 	
-	this.agreeCheckBoxView = Ti.UI.createView({
-		top:110,
-		height:20,
-		width:Ti.UI.SIZE
-	});
+	this.agreeCheckBoxView = Ti.UI.createView(Styles.agreeCheckBoxView);
 	
-	this.checkBox = Ti.UI.createImageView({
-		backgroundImage:'app/assets/checkbox.png',
-		height:15,
-		width:15,
-		left:5
-	});
+	this.checkBox = Ti.UI.createImageView(Styles.checkBox);
 	
-	this.agreeText = Ti.UI.createLabel({
-		left:25,
-		text:'I agree to Terms and Conditions.'
-	});
+	this.agreeText = Ti.UI.createLabel(Styles.agreeText);
 	
-	this.createAccountButton = Ti.UI.createButton({
-		top:20,
-		width : 220,
-		height : 30,
-		backgroundImage : 'app/assets/button.png',
-		title : 'Create Account'
-	});
+	this.createAccountButton = Ti.UI.createButton(Styles.createAccountButton);
 	
 	this.agreeCheckBoxView.add(this.checkBox);
 	this.agreeCheckBoxView.add(this.agreeText);

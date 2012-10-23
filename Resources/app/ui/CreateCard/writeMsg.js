@@ -17,53 +17,19 @@ function WriteMsg() {"use strict";
      * */
     this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
     
-	this.writeMsgLabel = Ti.UI.createLabel({
-		top : 10,
-		left : 10,
-		color : 'orange',
-		font : {
-			fontSize : 24
-		},
-		text : 'Write Message'
-	});
+	this.writeMsgLabel = Ti.UI.createLabel(Styles.writeMsgLabel);
 	
-	this.postCardView = Ti.UI.createView({
-		backgroundImage:'app/assets/postcard.png',
-		width:290,
-		height:180,
-		top:10
-	});
+	this.postCardView = Ti.UI.createView(Styles.postCardView);
 	
-	this.messageView = Ti.UI.createView({
-		height:120,
-		width:280
-	});
+	this.messageView = Ti.UI.createView(Styles.messageView);
 	
-	this.addMsgView = Ti.UI.createView({
-		left:45,
-		height:60,
-		width:55,
-		backgroundImage : 'app/assets/addMessage.png'
-	});
+	this.addMsgView = Ti.UI.createView(Styles.addMsgView);
 	
-	this.addMsgLabel = Ti.UI.createLabel({
-		top:90,
-		left:20,
-		text:'Add Message'
-	});
+	this.addMsgLabel = Ti.UI.createLabel(Styles.addMsgLabel);
 	
-	this.addAddressView = Ti.UI.createView({
-		left:175,
-		height:56,
-		width:51,
-		backgroundImage : 'app/assets/addAddress.png'
-	});
+	this.addAddressView = Ti.UI.createView(Styles.addAddressView);
 	
-	this.addAddressLabel = Ti.UI.createLabel({
-		top:90,
-		left:155,
-		text:'Add Address'
-	});
+	this.addAddressLabel = Ti.UI.createLabel(Styles.addAddressLabel);
 	
 	this.messageView.add(this.addMsgView);
 	this.messageView.add(this.addAddressView);

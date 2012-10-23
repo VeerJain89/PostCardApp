@@ -4,64 +4,110 @@
  */
 var Styles = {
 	wrapper : {
-        top:50,
-        layout : 'vertical',
-        width:310,
-        backgroundColor:'white'
-    },
-	headerText : {
-		top : 80,
-		left : 80,
-		text : 'SELECT A PROJECT TO GET STARTED',
-		font : {
-			fontSize : 30
-		},
-		color : '#717171'
-	},
-	projectCellView : {
-		width : 260,
-		height : 130,
-		borderRadius : 10		
-	},
-	projectHeader : {
-		text : 'PROJECT',
-		font : {
-			fontSize : 25
-		},
-		color : '#FFFFFF',
-		top : 20,
-		left : 40,
-        touchEnabled:false
-	},
-	projectTitle : {
-		text : 'ABC',
-		font : {
-			fontSize : 30,
-			fontWeight : 'bold'
-		},
-		color : '#FFFFFF',
 		top : 50,
-		left : 40,
-		touchEnabled:false
+		layout : 'vertical',
+		width : 310,
+		backgroundColor : 'white'
 	},
-	bottomBar : {
-		width : '100%',
-		backgroundColor : 'black',
-		bottom : 0,
-		height : 40,
-		backgroundGradient : {
-			type : 'linear',
-			colors : ['#000001', '#666666'],
-			startPoint : {
-				x : 0,
-				y : 0
-			},
-			endPoint : {
-				x : 550,
-				y : 550
-			},
-			backFillStart : false
-		}
+	createCardLabel : {
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Create Card'
+	},
+	cardImageView : {
+		backgroundColor : '#666666',
+		width : 290,
+		height : 180,
+		top : 10
+	},
+	imageOptionView : {
+		height : 120,
+		width : 280
+	},
+	editImageView : {
+		left : 30,
+		height : 60,
+		width : 58,
+		backgroundImage : 'app/assets/editImage.png'
+	},
+	editImageLabel : {
+		top : 90,
+		left : 25,
+		text : 'Edit Image'
+	},
+	changeImageView : {
+		left : 125,
+		height : 60,
+		width : 151,
+		backgroundImage : 'app/assets/changeImage.png'
+	},
+	changeImageLabel : {
+		top : 90,
+		left : 145,
+		text : 'Change Image'
+	},
+	writeMsgLabel : {
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Write Message'
+	},
+	postCardView : {
+		backgroundImage : 'app/assets/postcard.png',
+		width : 290,
+		height : 180,
+		top : 10
+	},
+	messageView : {
+		height : 120,
+		width : 280
+	},
+	addMsgView : {
+		left : 45,
+		height : 60,
+		width : 55,
+		backgroundImage : 'app/assets/addMessage.png'
+	},
+	addMsgLabel : {
+		top : 90,
+		left : 20,
+		text : 'Add Message'
+	},
+	addAddressView : {
+		left : 175,
+		height : 56,
+		width : 51,
+		backgroundImage : 'app/assets/addAddress.png'
+	},
+	addAddressLabel : {
+		top : 90,
+		left : 155,
+		text : 'Add Address'
+	},
+	previewLabel : {
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Preview Card'
+	},
+	editImageLabel : {
+		top : 10,
+		left : 10,
+		color : 'orange',
+		font : {
+			fontSize : 24
+		},
+		text : 'Edit Image'
 	}
 };
 
