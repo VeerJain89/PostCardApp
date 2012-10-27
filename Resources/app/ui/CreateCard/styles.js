@@ -108,7 +108,20 @@ var Styles = {
 			fontSize : 24
 		},
 		text : 'Edit Image'
-	}
+	},
+	flipView : {
+		top:20,
+		height : 29,
+		width : 105,
+		backgroundImage:'app/assets/flippostaddress.png'
+	},
+	flipText : {
+		top : 10,
+		font : {
+			fontSize : 16
+		},
+		text : 'Flip Card'
+	},
 };
 
 module.exports = Styles;
