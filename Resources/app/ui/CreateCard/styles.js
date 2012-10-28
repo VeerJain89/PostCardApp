@@ -34,6 +34,12 @@ var Styles = {
 		width : Ti.Platform.osname==='android'?'(58/Screen_Width)%':58,
 		backgroundImage : '/app/assets/editImage.png'
 	},
+	rotateResizeView:{
+		height:100,
+		width:290,
+		layout:'horizontal',
+		backgroundImage : '/app/assets/rotateresize.png'
+	},
 	editImageLabel : {
 		top : 90,
 		left : 25,
@@ -122,6 +128,13 @@ var Styles = {
 		},
 		text : 'Flip Card'
 	},
+	facebookView : {
+		top : -350,
+		height : '88%',
+		width : '100%',
+		visible:false,
+		backgroundColor:'white'
+	}
 };
 
 module.exports = Styles;

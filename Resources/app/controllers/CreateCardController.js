@@ -16,6 +16,9 @@ function CreateCardController(displayView) {"use strict";
 	switch(displayView){
 		case APP.Constants.CreateCardView:
 			this.UI = new createCardUI();
+			this.UI.changeImageView.addEventListener('click',function(){
+				self.UI.facebookView.visible=true;
+			});
 			break;
 		case APP.Constants.EditImageView:
 			this.UI = new EditImageUI();
