@@ -6,7 +6,7 @@ var Styles = {
     wrapper : {
         top:50,
         layout : 'vertical',
-        width:310,
+        width:Ti.Platform.osname==='android'?'96%':310,
         backgroundColor:'white',
         bottom:10
     },
@@ -25,9 +25,9 @@ var Styles = {
 		text : 'Email Address'
 	},
     emailText:{
-		backgroundImage : 'app/assets/textBox.png',
+		backgroundImage : '/app/assets/textBox.png',
 		top : 5,
-		width : 280,
+		width : Ti.Platform.osname==='android'?'87%':280,
 		height : 30
 	},
     passwordLabel:{
@@ -36,29 +36,29 @@ var Styles = {
 		text : 'Email Address'
 	},
     passwordText:{
-		backgroundImage : 'app/assets/textBox.png',
+		backgroundImage : '/app/assets/textBox.png',
 		top : 5,
-		width : 280,
+		width : Ti.Platform.osname==='android'?'87%':280,
 		height : 30
 	},
     signInButton:{
 		top : 10,
-		width : 220,
+		width : Ti.Platform.osname==='android'?'68%':220,
 		height : 30,
-		backgroundImage : 'app/assets/button.png',
+		backgroundImage : '/app/assets/button.png',
 		title : 'Sign In'
 	},
     separator:{
-		backgroundImage:'app/assets/separator.png',
+		backgroundImage:'/app/assets/separator.png',
 		height:6,
-		width:300,
+		width:Ti.Platform.osname==='android'?'93%':300,
 		top:10
 	},
     createNewButton:{
 		top : 10,
-		width : 220,
+		width : Ti.Platform.osname==='android'?'68%':220,
 		height : 30,
-		backgroundImage : 'app/assets/button.png',
+		backgroundImage : '/app/assets/button.png',
 		title : 'Create New Account'
 	},
 };

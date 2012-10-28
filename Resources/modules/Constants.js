@@ -1,5 +1,9 @@
 var constants = {
 	
+	//Initial screen size assumption
+	Screen_Width : 320,
+	Screen_Height : 460,
+	
 	// controllers name
 	LoginController : 'LoginController',
 	CreateCardController : 'CreateCardController',

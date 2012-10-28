@@ -15,8 +15,8 @@ var APP = {
 	/*
 	 * Require global style
 	 */
-	Styles : require("app/ui/AppStyle"),
-	Constants : require("modules/Constants"),
+	Styles : require("/app/ui/AppStyle"),
+	Constants : require("/modules/Constants"),
 
 	/**
 	 * Keeps track of the current screen

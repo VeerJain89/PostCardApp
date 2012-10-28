@@ -1,5 +1,5 @@
 // Module dependencies
-var Styles = require('app/ui/login/styles');
+var Styles = require('/app/ui/login/styles');
 var APP = require('core');
 
 /**

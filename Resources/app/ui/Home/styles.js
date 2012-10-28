@@ -6,38 +6,38 @@ var Styles = {
 	wrapper : {
         top:0,
         layout : 'vertical',
-        width:320,
+        width:Ti.Platform.osname==='android'?'100%':320,
         backgroundColor:'white'
     },
     headerView:{
-		backgroundImage:'app/assets/header.png',
+		backgroundImage:'/app/assets/header.png',
 		top:0,
-		height:50,
-		width:320
+		height:Ti.Platform.osname==='android'?'14%':50,
+		width:Ti.Platform.osname==='android'?'100%':320
 	},
     descriptionImage:{
-		backgroundImage:'app/assets/descriptionImage.png',
+		backgroundImage:'/app/assets/descriptionImage.png',
 		width:Ti.UI.FILL,
-		height:120,
-		top:20
+		height:Ti.Platform.osname==='android'?'33%':120,
+		top:Ti.Platform.osname==='android'?'5%':20
 	},
     createCardView:{
-		top:10,
-		backgroundImage:'app/assets/createCard.png',
-		height:50,
-		width:260
+		top:Ti.Platform.osname==='android'?'3%':10,
+		backgroundImage:'/app/assets/createCard.png',
+		height:Ti.Platform.osname==='android'?'14%':50,
+		width:Ti.Platform.osname==='android'?'81%':260
 	},
     postBoxView:{
-		top:10,
-		backgroundImage:'app/assets/viewPostBox.png',
-		height:50,
-		width:260
+		top:Ti.Platform.osname==='android'?'3%':10,
+		backgroundImage:'/app/assets/viewPostBox.png',
+		height:Ti.Platform.osname==='android'?'14%':50,
+		width:Ti.Platform.osname==='android'?'81%':260
 	},
     checkAccountView:{
-		top:10,
-		backgroundImage:'app/assets/checkAccount.png',
-		height:50,
-		width:260
+		top:Ti.Platform.osname==='android'?'3%':10,
+		backgroundImage:'/app/assets/checkAccount.png',
+		height:Ti.Platform.osname==='android'?'14%':50,
+		width:Ti.Platform.osname==='android'?'81%':260
 	},
 };
 

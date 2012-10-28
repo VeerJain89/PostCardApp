@@ -14,7 +14,7 @@ function tabBarUI() {"use strict";
 	this.tabBarView = Ti.UI.createView({
 		bottom : 0,
 		left : 0,
-		width : 320,
+		width : Ti.UI.FILL,
 		height : 50,
 		layout : 'horizontal',
 		zIndex:40
@@ -25,7 +25,7 @@ function tabBarUI() {"use strict";
 		left : 0,
 		height : Ti.UI.FILL,
 		width : 80,
-		backgroundImage : 'app/assets/tabCreateCardP.png'
+		backgroundImage : '/app/assets/tabCreateCardP.png'
 	});
 
 	this.editImageTab = Ti.UI.createView({
@@ -33,7 +33,7 @@ function tabBarUI() {"use strict";
 		left : 0,
 		height : Ti.UI.FILL,
 		width : 80,
-		backgroundImage : 'app/assets/tabEditImageN.png'
+		backgroundImage : '/app/assets/tabEditImageN.png'
 	});
 
 	this.writeMsgTab = Ti.UI.createView({
@@ -41,7 +41,7 @@ function tabBarUI() {"use strict";
 		left : 0,
 		height : Ti.UI.FILL,
 		width : 80,
-		backgroundImage : 'app/assets/tabWriteMsgN.png'
+		backgroundImage : '/app/assets/tabWriteMsgN.png'
 	});
 
 	this.previewTab = Ti.UI.createView({
@@ -49,7 +49,7 @@ function tabBarUI() {"use strict";
 		left : 0,
 		height : Ti.UI.FILL,
 		width : 80,
-		backgroundImage : 'app/assets/tabPreviewN.png'
+		backgroundImage : '/app/assets/tabPreviewN.png'
 	});
 
 	this.selectedTabId = 1;
@@ -59,7 +59,7 @@ function tabBarUI() {"use strict";
 			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.CreateCardView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
-			e.source.backgroundImage = 'app/assets/tabCreateCardP.png';
+			e.source.backgroundImage = '/app/assets/tabCreateCardP.png';
 		}
 	});
 
@@ -68,7 +68,7 @@ function tabBarUI() {"use strict";
 			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.EditImageView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
-			e.source.backgroundImage = 'app/assets/tabEditImageP.png';
+			e.source.backgroundImage = '/app/assets/tabEditImageP.png';
 		}
 	});
 
@@ -77,7 +77,7 @@ function tabBarUI() {"use strict";
 			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.WriteMsgView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
-			e.source.backgroundImage = 'app/assets/tabWriteMsgP.png';
+			e.source.backgroundImage = '/app/assets/tabWriteMsgP.png';
 		}
 	});
 
@@ -86,15 +86,15 @@ function tabBarUI() {"use strict";
 			APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.PreviewView);
 			self.selectedTabId = e.source.id;
 			self.backToNormal();
-			e.source.backgroundImage = 'app/assets/tabPreviewP.png';
+			e.source.backgroundImage = '/app/assets/tabPreviewP.png';
 		}
 	});
 
 	this.backToNormal = function() {
-		this.createCardTab.backgroundImage = 'app/assets/tabCreateCardN.png';
-		this.editImageTab.backgroundImage = 'app/assets/tabEditImageN.png';
-		this.writeMsgTab.backgroundImage = 'app/assets/tabWriteMsgN.png';
-		this.previewTab.backgroundImage = 'app/assets/tabPreviewN.png';
+		this.createCardTab.backgroundImage = '/app/assets/tabCreateCardN.png';
+		this.editImageTab.backgroundImage = '/app/assets/tabEditImageN.png';
+		this.writeMsgTab.backgroundImage = '/app/assets/tabWriteMsgN.png';
+		this.previewTab.backgroundImage = '/app/assets/tabPreviewN.png';
 	};
 
 	this.tabBarView.add(this.createCardTab);

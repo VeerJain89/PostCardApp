@@ -13,7 +13,7 @@ function FlyMenu(menuText) {"use strict";
 			top : -75,
 			width : 177,
 			height : 115,
-			backgroundImage : 'app/assets/settingsDropDown.png',
+			backgroundImage : '/app/assets/settingsDropDown.png',
 			zIndex : 105
 		},
 		menuTable : {
