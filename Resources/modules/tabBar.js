@@ -15,7 +15,7 @@ function tabBarUI() {"use strict";
 		bottom : 0,
 		left : 0,
 		width : Ti.UI.FILL,
-		height : 50,
+		height : Ti.Platform.osname==='android'?'10.9%':50,
 		layout : 'horizontal',
 		zIndex:40
 	});
@@ -24,7 +24,7 @@ function tabBarUI() {"use strict";
 		id : 1,
 		left : 0,
 		height : Ti.UI.FILL,
-		width : 80,
+		width : Ti.Platform.osname==='android'?'25%':80,
 		backgroundImage : '/app/assets/tabCreateCardP.png'
 	});
 
@@ -32,7 +32,7 @@ function tabBarUI() {"use strict";
 		id : 2,
 		left : 0,
 		height : Ti.UI.FILL,
-		width : 80,
+		width : Ti.Platform.osname==='android'?'25%':80,
 		backgroundImage : '/app/assets/tabEditImageN.png'
 	});
 
@@ -40,7 +40,7 @@ function tabBarUI() {"use strict";
 		id : 3,
 		left : 0,
 		height : Ti.UI.FILL,
-		width : 80,
+		width : Ti.Platform.osname==='android'?'25%':80,
 		backgroundImage : '/app/assets/tabWriteMsgN.png'
 	});
 
@@ -48,7 +48,7 @@ function tabBarUI() {"use strict";
 		id : 4,
 		left : 0,
 		height : Ti.UI.FILL,
-		width : 80,
+		width : Ti.Platform.osname==='android'?'25%':80,
 		backgroundImage : '/app/assets/tabPreviewN.png'
 	});
 

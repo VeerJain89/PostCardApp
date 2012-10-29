@@ -20,15 +20,17 @@ function Preview() {"use strict";
 	this.previewLabel = Ti.UI.createLabel(Styles.previewLabel);
 	
 	this.postCardView = Ti.UI.createView(Styles.postCardView);
-	this.postCardView.backgroundImage='app/assets/postaddress.png';
+	this.postCardView.backgroundImage='/app/assets/postaddress.png';
 	
 	this.flipView = Ti.UI.createView(Styles.flipView);
 	this.flipText = Ti.UI.createLabel(Styles.flipText);
+	this.sendbutton = Ti.UI.createButton(Styles.sendbutton);
 	
 	this.wrapper.add(this.previewLabel);
 	this.wrapper.add(this.postCardView);
 	this.wrapper.add(this.flipView);
 	this.wrapper.add(this.flipText);
+	this.wrapper.add(this.sendbutton);
 }
 
 module.exports = Preview;

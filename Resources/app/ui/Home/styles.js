@@ -19,7 +19,7 @@ var Styles = {
 		backgroundImage:'/app/assets/descriptionImage.png',
 		width:Ti.UI.FILL,
 		height:Ti.Platform.osname==='android'?'33%':120,
-		top:Ti.Platform.osname==='android'?'5%':20
+		top:Ti.Platform.osname==='android'?'(20/Screen_Height)%':20
 	},
     createCardView:{
 		top:Ti.Platform.osname==='android'?'3%':10,
