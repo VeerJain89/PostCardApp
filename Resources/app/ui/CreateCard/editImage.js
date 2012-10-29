@@ -39,12 +39,7 @@ function EditImage() {"use strict";
 	
 	this.rotateRightView.addEventListener('singletap', function() {
 		rotateAngle+=90;
-		self.cardImageView.animate(Ti.UI.createAnimation({
-			transform : Ti.UI.create2DMatrix({
-				rotate : rotateAngle
-			}),
-			duration:2000
-		}));
+		rotateView();
 	}); 
 
 	this.rotateLeftView = Ti.UI.createView({
@@ -54,13 +49,17 @@ function EditImage() {"use strict";
 	
 	this.rotateLeftView.addEventListener('singletap', function() {
 		rotateAngle-=90;
+		rotateView();
+	}); 
+	
+	function rotateView(){
 		self.cardImageView.animate(Ti.UI.createAnimation({
 			transform : Ti.UI.create2DMatrix({
 				rotate : rotateAngle
 			}),
-			duration:2000
+			duration:500
 		}));
-	}); 
+	}
 	
 	this.zoomInView = Ti.UI.createView({
 		height:100,
@@ -69,12 +68,7 @@ function EditImage() {"use strict";
 	
 	this.zoomInView.addEventListener('singletap', function() {
 		scaleNumber= scaleNumber*2;
-		self.cardImageView.animate(Ti.UI.createAnimation({
-			transform : Ti.UI.create2DMatrix({
-				scale : scaleNumber
-			}),
-			duration:2000
-		}));
+		scaleView();
 	}); 
 	
 	this.zoomOutView = Ti.UI.createView({
@@ -84,13 +78,17 @@ function EditImage() {"use strict";
 	
 	this.zoomOutView.addEventListener('singletap', function() {
 		scaleNumber= scaleNumber/2;
+		scaleView();
+	}); 
+	
+	function scaleView(){
 		self.cardImageView.animate(Ti.UI.createAnimation({
 			transform : Ti.UI.create2DMatrix({
 				scale : scaleNumber
 			}),
-			duration:2000
+			duration:500
 		}));
-	}); 
+	}
 	
 	this.rotateResizeView.add(this.rotateRightView);
 	this.rotateResizeView.add(this.rotateLeftView);

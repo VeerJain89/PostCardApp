@@ -16,8 +16,46 @@ function CreateCardController(displayView) {"use strict";
 	switch(displayView){
 		case APP.Constants.CreateCardView:
 			this.UI = new createCardUI();
+			this.UI.editImageView.addEventListener('click',function(){
+				APP.tabBar.backToNormal();
+				APP.tabBar.editImageTab.backgroundImage = '/app/assets/tabEditImageP.png';
+				APP.tabBar.selectedTabId = APP.tabBar.editImageTab.id;
+				APP.navigationObserver(APP.Constants.CreateCardController, APP.Constants.EditImageView)
+			})
 			this.UI.changeImageView.addEventListener('click',function(){
+				self.UI.selectPicView.visible=true;
+			});
+			this.UI.facebookButton.addEventListener('click',function(){
+				self.UI.selectPicView.visible=false;
 				self.UI.facebookView.visible=true;
+			});
+			this.UI.galleryButton.addEventListener('click',function(){
+				self.UI.selectPicView.visible=false;
+				Titanium.Media.openPhotoGallery({
+		            success : function(event) {
+		                self.UI.cardImageView.image = event.media;
+						APP.image = event.media;
+		            },
+		            error : function(error) {
+		                alert('Something Bad Happened' + '\n' + 'Please Relaunch The App');
+		            }
+        		});
+			});
+			this.UI.takePhotoButton.addEventListener('click',function(){
+				self.UI.selectPicView.visible=false;
+		        Titanium.Media.showCamera({
+		            success : function(event) {
+		                self.UI.cardImageView.image = event.media;
+						APP.image = event.media;
+		            },
+		            error : function(error) {
+		                alert('Something Bad Happened' + '\n' + 'Please Relaunch The App');
+		            },
+		            showControls : true,
+		            mediaTypes : Ti.Media.MEDIA_TYPE_PHOTO,
+		            saveToPhotoGallery : false,
+		            autohide : true
+		        });
 			});
 			break;
 		case APP.Constants.EditImageView:

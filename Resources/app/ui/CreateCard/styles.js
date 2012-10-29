@@ -141,8 +141,22 @@ var Styles = {
 		top : -350,
 		height : '88%',
 		width : '100%',
-		visible:false,
-		backgroundColor:'white'
+		visible : false,
+		backgroundColor : 'white'
+	},
+	selectPicView : {
+		top : -350,
+		height : '88%',
+		width : '100%',
+		visible : false,
+		backgroundColor : 'black',
+		opacity:0.8
+	},
+	optionsView : {
+		backgroundColor : 'white',
+		height:Ti.UI.SIZE,
+		layout:'vertical',
+		width:100
 	}
 };
 

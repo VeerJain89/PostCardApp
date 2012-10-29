@@ -35,8 +35,33 @@ function CreateCard() {"use strict";
 
 	this.changeImageLabel = Ti.UI.createLabel(Styles.changeImageLabel);
 
+	this.selectPicView = Ti.UI.createView(Styles.selectPicView);
+	
+	this.optionsView = Ti.UI.createView(Styles.optionsView);
+	
+	this.takePhotoButton = Ti.UI.createButton({
+		width:100,
+		title:'Take Picture'
+	});
+	
+	this.galleryButton = Ti.UI.createButton({
+		width:100,
+		title:'Gallery'
+	});
+	
+	this.facebookButton = Ti.UI.createButton({
+		width:100,
+		title:'Facebook'
+	});
+	
+	this.optionsView.add(this.takePhotoButton);
+	this.optionsView.add(this.galleryButton);
+	this.optionsView.add(this.facebookButton);
+	
 	this.facebookView = Ti.UI.createView(Styles.facebookView);
-
+	
+	this.selectPicView.add(this.optionsView);
+	
 	this.imageOptionView.add(this.editImageView);
 	this.imageOptionView.add(this.editImageLabel);
 	this.imageOptionView.add(this.changeImageView);
@@ -45,6 +70,7 @@ function CreateCard() {"use strict";
 	this.wrapper.add(this.createCardLabel);
 	this.wrapper.add(this.cardImageView);
 	this.wrapper.add(this.imageOptionView);
+	this.wrapper.add(this.selectPicView);
 	this.wrapper.add(this.facebookView);
 
 	//for facebook
