@@ -1,11 +1,11 @@
 // Module dependencies
 var APP = require('core');
-var createCardUI = require('app/ui/CreateCard/createCard');
-var EditImageUI =require('app/ui/CreateCard/editImage');
-var WriteMsgUI =require('app/ui/CreateCard/writeMsg');
-var PreviewUI =require('app/ui/CreateCard/preview');
+var createCardUI = require('/app/ui/CreateCard/createCard');
+var EditImageUI =require('/app/ui/CreateCard/editImage');
+var WriteMsgUI =require('/app/ui/CreateCard/writeMsg');
+var PreviewUI =require('/app/ui/CreateCard/preview');
 var httpHelper = require('/modules/http');
-var Header = require('modules/Header');
+var Header = require('/modules/Header');
 /**
  * Project controller module
  * @constructor
@@ -66,8 +66,13 @@ function CreateCardController(displayView) {"use strict";
 			break;
 		case APP.Constants.PreviewView:
 			this.UI = new PreviewUI();
+			this.UI.sendbutton.addEventListener('click', function() {
+			APP.navigationObserver(APP.Constants.ModeOfPaymentSelectionController);
+			});
 			break;
+	
 	}
+	
 	APP.currentView = displayView;
 	if (!APP.header) {
 		var HeaderUI = new Header();
@@ -78,6 +83,8 @@ function CreateCardController(displayView) {"use strict";
 	APP.header.signInButton.visible=true;
 	APP.header.backButton.visible=false;
 	APP.tabBar.tabBarView.visible=true;
+	
+	
 }
 
 module.exports = CreateCardController;
