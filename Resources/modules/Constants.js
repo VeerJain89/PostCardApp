@@ -10,6 +10,8 @@ var constants = {
 	HomeController : "HomeController",
 	CreateAccountController : "CreateAccountController",
 	AddAddressController:'AddAddressController',
+	MakePaymentController:'MakePaymentController',
+	ModeOfPaymentSelectionController:'ModeOfPaymentSelectionController',
 	
 	// view name
 	CreateCardView: 'CreateCardView',
