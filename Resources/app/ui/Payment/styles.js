@@ -46,19 +46,24 @@ var Styles = {
 		height : Ti.Platform.osname==='android'?'6.52%':30,
 		hintText:'Card No.'
 	},
+	cvvExpiryView : {
+		top : 10,
+		width : Ti.Platform.osname==='android'?'87.50%':280,
+		height : Ti.Platform.osname==='android'?'6.52%%':30,
+	},
 	cvvNumber:{
 		backgroundImage : '/app/assets/textBox.png',
 		top : 10,
 		width : Ti.Platform.osname==='android'?'40%':120,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30,
 		hintText:'CVV No.'
 	},
 	expiryDate:{
 		backgroundImage : '/app/assets/textBox.png',
 		top : 10,
-		left : Ti.Platform.osname==='android'?'50%':140,
+		left : Ti.Platform.osname==='android'?'10%':10,
 		width : Ti.Platform.osname==='android'?'50%':140,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30,
 		hintText:'Expiry Date.'
 	},
     confirmButton:{
@@ -94,10 +99,22 @@ var Styles = {
 		},
 		text : 'Choose mode of Payment'
 	},
-	visaMasterImageView : {
+	creditCardPaymentView : {
 		top : 10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%':30, 
+		height : Ti.Platform.osname==='android'?'10%':30,
+	},
+	creditCardPaymentLabel : {
+		top : 10,
+		width : Ti.Platform.osname==='android'?'87.50%':280,
+		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30, 
+		text : 'Credit Card Payment'
+	},
+	visaMasterImageView : {
+		top : 10,
+		left : Ti.Platform.osname==='android'?'60%':192,
+		width : Ti.Platform.osname==='android'?'40%':280,
+		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30, 
 		backgroundImage : '/app/assets/visamaster.png'
 	},
 	priceTagLabel : {

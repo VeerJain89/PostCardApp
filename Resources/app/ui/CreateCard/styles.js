@@ -88,8 +88,6 @@ var Styles = {
 	},
 	addAddressView : {
 		left : Ti.Platform.osname==='android'?'65%':175,
-		//height : Ti.Platform.osname==='android'?'12.17%':56,
-		//width : Ti.Platform.osname==='android'?'15.94%':51,
 		height : Ti.Platform.osname==='android'?'50%':60,
 		width : Ti.Platform.osname==='android'?'20%':151,
 		backgroundImage : '/app/assets/addAddress.png'

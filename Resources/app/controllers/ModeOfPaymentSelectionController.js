@@ -1,7 +1,6 @@
 // Module dependencies
-var APP = require('/core');
-//var UI = require('app/ui/Payment/makePayment');
-var UI = require('/app/ui/Payment/modeOfPaymentSelection');
+var APP = require('core');
+var UI = require('app/ui/Payment/modeOfPaymentSelection');
 /**
  * Login controller module
  * @constructor

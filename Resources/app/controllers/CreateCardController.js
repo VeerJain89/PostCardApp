@@ -1,11 +1,11 @@
 // Module dependencies
 var APP = require('core');
-var createCardUI = require('/app/ui/CreateCard/createCard');
-var EditImageUI =require('/app/ui/CreateCard/editImage');
-var WriteMsgUI =require('/app/ui/CreateCard/writeMsg');
-var PreviewUI =require('/app/ui/CreateCard/preview');
-var httpHelper = require('/modules/http');
-var Header = require('/modules/Header');
+var createCardUI = require('app/ui/CreateCard/createCard');
+var EditImageUI =require('app/ui/CreateCard/editImage');
+var WriteMsgUI =require('app/ui/CreateCard/writeMsg');
+var PreviewUI =require('app/ui/CreateCard/preview');
+var httpHelper = require('modules/http');
+var Header = require('modules/Header');
 /**
  * Project controller module
  * @constructor

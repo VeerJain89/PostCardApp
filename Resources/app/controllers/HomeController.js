@@ -1,8 +1,8 @@
 // Module dependencies
-var APP = require('/core');
-var UI = require('/app/ui/Home/home');
-var httpHelper = require('/modules/http');
-var TabBar = require('/modules/tabBar');
+var APP = require('core');
+var UI = require('app/ui/Home/home');
+var httpHelper = require('modules/http');
+var TabBar = require('modules/tabBar');
 
 /**
  * Project controller module
