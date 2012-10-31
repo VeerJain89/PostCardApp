@@ -49,7 +49,7 @@ var Styles = {
 	cvvExpiryView : {
 		top : 10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%%':30,
+		height : Ti.Platform.osname==='android'?'6.52%%':40,
 	},
 	cvvNumber:{
 		backgroundImage : '/app/assets/textBox.png',
@@ -102,7 +102,7 @@ var Styles = {
 	creditCardPaymentView : {
 		top : 10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'10%':30,
+		height : Ti.Platform.osname==='android'?'10%':50,
 	},
 	creditCardPaymentLabel : {
 		top : 10,
@@ -112,9 +112,9 @@ var Styles = {
 	},
 	visaMasterImageView : {
 		top : 10,
-		left : Ti.Platform.osname==='android'?'60%':192,
-		width : Ti.Platform.osname==='android'?'40%':280,
-		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30, 
+		left : Ti.Platform.osname==='android'?'60%':170,
+		width : Ti.Platform.osname==='android'?'40%':117,
+		height : Ti.Platform.osname==='android'?Ti.UI.FILL:40, 
 		backgroundImage : '/app/assets/visamaster.png'
 	},
 	priceTagLabel : {

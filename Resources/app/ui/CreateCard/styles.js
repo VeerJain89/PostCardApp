@@ -89,7 +89,7 @@ var Styles = {
 	addAddressView : {
 		left : Ti.Platform.osname==='android'?'65%':175,
 		height : Ti.Platform.osname==='android'?'50%':60,
-		width : Ti.Platform.osname==='android'?'20%':151,
+		width : Ti.Platform.osname==='android'?'20%':55,
 		backgroundImage : '/app/assets/addAddress.png'
 	},
 	addAddressLabel : {
