@@ -1,5 +1,5 @@
 // Module dependencies
-var Styles = require('/app/ui/CreateCard/styles');
+var Styles = require('app/ui/CreateCard/styles');
 var APP = require('core');
 var httpHelper = require('/modules/http');
 /**

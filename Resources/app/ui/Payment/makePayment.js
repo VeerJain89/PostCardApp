@@ -1,5 +1,5 @@
 // Module dependencies
-var Styles = require('/app/ui/Payment/styles');
+var Styles = require('app/ui/Payment/styles');
 var APP = require('core');
 var httpHelper = require('/modules/http');
 /**
@@ -32,7 +32,7 @@ function MakePayment() {"use strict";
 	
 	this.expiryDate = Ti.UI.createTextField(Styles.expiryDate);
 	
-	this.makePaymentButton = Ti.UI.createButton(Styles.makePaymentButton);
+	this.makePaymentButton = Ti.UI.createTextField(Styles.makePaymentButton);
 	
 	this.wrapper.add(this.paymentLabel);
 	this.wrapper.add(this.visaMasterImageView);
@@ -40,9 +40,8 @@ function MakePayment() {"use strict";
 	this.wrapper.add(this.lNameText);
 	this.wrapper.add(this.cardType);
 	this.wrapper.add(this.cardNumber);
-	this.wrapper.add(this.cvvNumber);
 	this.wrapper.add(this.expiryDate);
 	this.wrapper.add(this.makePaymentButton);
 }
 
-module.exports = MakePayment;
+module.exports = Preview;

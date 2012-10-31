@@ -1,12 +1,12 @@
 // Module dependencies
-var APP = require('/core');
-//var UI = require('app/ui/Payment/makePayment');
-var UI = require('/app/ui/Payment/modeOfPaymentSelection');
+var APP = require('core');
+var UI = require('app/ui/Payment/makePayment');
+var UI = require('app/ui/Payment/modeOfPayment');
 /**
  * Login controller module
  * @constructor
  */
-function ModeOfPaymentSelectionController() {
+function PaymentController() {
     "use strict";
     var self = this;
     // Obligatory 'this' reference
@@ -16,11 +16,13 @@ function ModeOfPaymentSelectionController() {
      */
     this.UI = new UI();
 	
+	APP.header.signInButton.visible=false;
 	APP.header.backButton.visible=true;
+	APP.tabBar.tabBarView.visible=false;
 	
 	this.UI.confirmButton.addEventListener('click',function(){
 		APP.navigationObserver(APP.Constants.MakePaymentController);
 	});
 }
 
-module.exports = ModeOfPaymentSelectionController;
+module.exports = CreateAccountController;
