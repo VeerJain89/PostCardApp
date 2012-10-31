@@ -20,7 +20,7 @@ var constants = {
 	PreviewView: 'PreviewView',
 	AddAddressView: 'AddAddressView',
 	// core page constants
-	controllerPath : '/app/controllers/',
+	controllerPath : 'app/controllers/',
 	
 	// Login page message
 	UserName: 'username',
