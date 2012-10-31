@@ -20,13 +20,16 @@ function ModeOfPaymentSelection() {"use strict";
 	this.paymentLabel = Ti.UI.createLabel(Styles.paymentLabel);
 	this.priceTagLabel = Ti.UI.createLabel(Styles.priceTagLabel);
 	
-	this.postCardView = Ti.UI.createView(Styles.postCardView);
+	this.cardImageView = Ti.UI.createView(Styles.cardImageView);
 	this.paymentOptionsView = Ti.UI.createView(Styles.paymentOptionsView);
 	this.confirmButton = Ti.UI.createButton(Styles.confirmButton);
+	this.cardImageView = Ti.UI.createView(Styles.cardImageView);
+	this.paymentOptionLabel = Ti.UI.createLabel(Styles.paymentOptionLabel);
 	
 	this.wrapper.add(this.paymentLabel);
 	this.wrapper.add(this.priceTagLabel);
-	this.wrapper.add(this.postCardView);
+	this.wrapper.add(this.cardImageView);
+	this.paymentOptionsView.add(this.paymentOptionLabel);
 	this.wrapper.add(this.paymentOptionsView);
 	this.wrapper.add(this.confirmButton);
 }

@@ -14,54 +14,54 @@ var Styles = {
 		left : 10,
 		color : 'orange',
 		font : {
-			fontSize : 24
+			fontSize : Ti.Platform.osname==='android'?30:24
 		},
 		text : 'Payment'
 	},
     fNameText:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
+		top : Ti.Platform.osname==='android'?'5%':10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?'8%':30,
 		hintText:'First Name'
 	},
     lNameText:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
+		top : Ti.Platform.osname==='android'?'5%':10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?'8%':30,
 		hintText:'Last Name'
 	},
     cardType:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
+		top : Ti.Platform.osname==='android'?'5%':10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?'8%':30,
 		hintText:'Card Type'
 	},
     cardNumber:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
+		top : Ti.Platform.osname==='android'?'5%':10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%':30,
+		height : Ti.Platform.osname==='android'?'8%':30,
 		hintText:'Card No.'
 	},
 	cvvExpiryView : {
-		top : 10,
+		top : Ti.Platform.osname==='android'?'5%':10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
-		height : Ti.Platform.osname==='android'?'6.52%%':40,
+		height : Ti.Platform.osname==='android'?'8%':40,
 	},
 	cvvNumber:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
+		left : 0,
 		width : Ti.Platform.osname==='android'?'40%':120,
 		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30,
 		hintText:'CVV No.'
 	},
 	expiryDate:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : 10,
-		left : Ti.Platform.osname==='android'?'10%':10,
+		//top : 10,
+		left : Ti.Platform.osname==='android'?'50%':140,
 		width : Ti.Platform.osname==='android'?'50%':140,
 		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30,
 		hintText:'Expiry Date.'
@@ -74,7 +74,7 @@ var Styles = {
 		title : 'Confirm'
 	},
 	makePaymentButton:{
-		top:20,
+		top : Ti.Platform.osname==='android'?'8%':20,
 		width : Ti.Platform.osname==='android'?'68.75%':220,
 		height : Ti.Platform.osname==='android'?'6.52%':30,
 		backgroundImage : '/app/assets/button.png',
@@ -83,22 +83,23 @@ var Styles = {
 	cardImageView : {
 		backgroundColor : '#666666',
 		width : Ti.Platform.osname==='android'?'90.62%':290,
-		height : Ti.Platform.osname==='android'?'50%':180,
+		height : Ti.Platform.osname==='android'?'30%':180,
 		top : 10
 	},
 	paymentOptionsView : {
-		height : Ti.Platform.osname==='android'?'26.09%':120,
+		top : 10,
+		height : Ti.Platform.osname==='android'?'40%':120,
 		width : Ti.Platform.osname==='android'?'96.87%':280 
 	},
 	paymentOptionLabel : {
 		top : 10,
 		left : 10,
-		color : 'orange',
 		font : {
 			fontSize : 24
 		},
 		text : 'Choose mode of Payment'
 	},
+	
 	creditCardPaymentView : {
 		top : 10,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
@@ -106,6 +107,9 @@ var Styles = {
 	},
 	creditCardPaymentLabel : {
 		top : 10,
+		font : {
+			fontSize : Ti.Platform.osname==='android'?22:20
+		},
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?Ti.UI.FILL:30, 
 		text : 'Credit Card Payment'
@@ -116,6 +120,12 @@ var Styles = {
 		width : Ti.Platform.osname==='android'?'40%':117,
 		height : Ti.Platform.osname==='android'?Ti.UI.FILL:40, 
 		backgroundImage : '/app/assets/visamaster.png'
+	},
+	cardImageView : {
+		backgroundColor : '#666666',
+		width : Ti.Platform.osname==='android'?'80%':260,
+		height : Ti.Platform.osname==='android'?'30%':150,
+		top : 10
 	},
 	priceTagLabel : {
 		top : 10,
