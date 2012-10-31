@@ -4,11 +4,10 @@
  */
 var Styles = {
 	wrapper : {
-        top:50,
+        top: Ti.Platform.osname==='android'?'10.9%':50,
         layout : 'vertical',
         width:Ti.Platform.osname==='android'?'96.87%':310,
-        backgroundColor:'white',
-        height:Ti.Platform.osname==='android'?'86.96%':400
+        backgroundColor:'white'
     },
     paymentLabel:{
 		top : 10,

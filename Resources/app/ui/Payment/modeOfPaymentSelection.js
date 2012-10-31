@@ -1,5 +1,5 @@
 // Module dependencies
-var Styles = require('app/ui/Payment/styles');
+var Styles = require('/app/ui/Payment/styles');
 var APP = require('core');
 var httpHelper = require('/modules/http');
 /**
@@ -31,4 +31,4 @@ function ModeOfPaymentSelection() {"use strict";
 	this.wrapper.add(this.confirmButton);
 }
 
-module.exports = Preview;
+module.exports = ModeOfPaymentSelection;
