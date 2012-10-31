@@ -67,9 +67,6 @@ function CreateCardController(displayView) {"use strict";
 		case APP.Constants.PreviewView:
 			this.UI = new PreviewUI();
 			this.UI.sendbutton.addEventListener('click', function() {
-				APP.tabBar.tabBarView.visible=false;
-				APP.header.signInButton.visible=false;
-				APP.header.backButton.visible=true;
 			APP.navigationObserver(APP.Constants.ModeOfPaymentSelectionController);
 			});
 			break;
