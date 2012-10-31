@@ -118,7 +118,7 @@ function CreateCard() {"use strict";
 				if (e.result) {
 					var rows = [];
 					var data = JSON.parse(e.result).data;
-					for (var x in data) {
+					for (x in data) {
 						Ti.API.debug(JSON.stringify(data[x]));
 						var path = data[x].id + '/photos';
 
@@ -127,7 +127,7 @@ function CreateCard() {"use strict";
 						}, 'GET', function(images) {
 							if (images.success) {
 								var imagedata = JSON.parse(images.result).data;
-								for (var count in imagedata) {
+								for (count in imagedata) {
 									Ti.API.info(JSON.stringify(imagedata[count].name));
 									imagedata[count].picture = imagedata[count].picture.replace('s.jpg','n.jpg');
 									var row = Titanium.UI.createTableViewRow({
