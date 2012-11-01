@@ -106,6 +106,39 @@ var Styles = {
 		},
 		text : 'Preview Card'
 	},
+	headerLabel : {
+		top:0,
+		height:40,
+		text:'Select View',
+		backgroundColor:'Orange',
+		color:'white',
+		font:{
+			fontSize:16,
+			fontWeight:'bold'
+		},
+		width:180
+	},
+	takePhotoButton : {
+		width:180,
+		height:35,
+		text:'Take Picture',
+		backgroundColor:'white',
+		borderColor:'orange'
+	},
+	galleryButton :{
+		width:180,
+		height:35,
+		text:'Gallery',
+		backgroundColor:'white',
+		borderColor:'orange'
+	},
+	facebookButton : {
+		width:180,
+		height:35,
+		text:'Facebook',
+		backgroundColor:'white',
+		borderColor:'orange'
+	},
 	editImageText : {
 		top : 10,
 		left : 10,
@@ -154,7 +187,7 @@ var Styles = {
 		backgroundColor : 'white',
 		height:Ti.UI.SIZE,
 		layout:'vertical',
-		width:100
+		width:180
 	}
 };
 

@@ -39,21 +39,15 @@ function CreateCard() {"use strict";
 	
 	this.optionsView = Ti.UI.createView(Styles.optionsView);
 	
-	this.takePhotoButton = Ti.UI.createButton({
-		width:100,
-		title:'Take Picture'
-	});
+	this.headerLabel = Ti.UI.createLabel(Styles.headerLabel);
 	
-	this.galleryButton = Ti.UI.createButton({
-		width:100,
-		title:'Gallery'
-	});
+	this.takePhotoButton = Ti.UI.createLabel(Styles.takePhotoButton);
 	
-	this.facebookButton = Ti.UI.createButton({
-		width:100,
-		title:'Facebook'
-	});
+	this.galleryButton = Ti.UI.createLabel(Styles.galleryButton);
 	
+	this.facebookButton = Ti.UI.createLabel(Styles.facebookButton);
+	
+	this.optionsView.add(this.headerLabel);
 	this.optionsView.add(this.takePhotoButton);
 	this.optionsView.add(this.galleryButton);
 	this.optionsView.add(this.facebookButton);
