@@ -30,8 +30,8 @@ function EditImage() {"use strict";
 	this.rotateResizeView = Ti.UI.createView(Styles.rotateResizeView);
 	
 	this.rotateRightView = Ti.UI.createView({
-		height:100,
-		width:72
+		height:Ti.Platform.osname==='android'?Ti.UI.FILL:100,
+		width:Ti.Platform.osname==='android'?'25%':72
 	});
 
 	var rotateAngle = 0;
@@ -43,8 +43,8 @@ function EditImage() {"use strict";
 	}); 
 
 	this.rotateLeftView = Ti.UI.createView({
-		height:100,
-		width:72
+		height:Ti.Platform.osname==='android'?Ti.UI.FILL:100,
+		width:Ti.Platform.osname==='android'?'25%':72
 	});
 	
 	this.rotateLeftView.addEventListener('singletap', function() {
@@ -62,8 +62,8 @@ function EditImage() {"use strict";
 	}
 	
 	this.zoomInView = Ti.UI.createView({
-		height:100,
-		width:72
+		height:Ti.Platform.osname==='android'?Ti.UI.FILL:100,
+		width:Ti.Platform.osname==='android'?'25%':72
 	});
 	
 	this.zoomInView.addEventListener('singletap', function() {
@@ -72,8 +72,8 @@ function EditImage() {"use strict";
 	}); 
 	
 	this.zoomOutView = Ti.UI.createView({
-		height:100,
-		width:72
+		height:Ti.Platform.osname==='android'?Ti.UI.FILL:100,
+		width:Ti.Platform.osname==='android'?'25%':72
 	});
 	
 	this.zoomOutView.addEventListener('singletap', function() {
