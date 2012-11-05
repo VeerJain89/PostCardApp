@@ -26,7 +26,7 @@ function CreateAccountUI() {"use strict";
 	
 	this.agreeCheckBoxView = Ti.UI.createView(Styles.agreeCheckBoxView);
 	
-	this.checkBox = Ti.UI.createImageView(Styles.checkBox);
+	this.checkBox = Ti.UI.createSwitch(Styles.checkBox);
 	
 	this.agreeText = Ti.UI.createLabel(Styles.agreeText);
 	
@@ -42,6 +42,7 @@ function CreateAccountUI() {"use strict";
 	this.wrapper.add(this.passwordText);
 	this.wrapper.add(this.agreeCheckBoxView);
 	this.wrapper.add(this.createAccountButton);
+	
 }
 
 module.exports = CreateAccountUI;
