@@ -7,7 +7,8 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'10.9%':50,
 		layout : 'vertical',
 		width : Ti.Platform.osname==='android'?'96.87%':310,
-		backgroundColor : 'white'
+		backgroundColor : 'white',
+		scrollType: 'vertical'
 	},
 	createCardLabel : {
 		top : 10,

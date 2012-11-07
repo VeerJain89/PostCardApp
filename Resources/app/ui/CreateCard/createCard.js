@@ -15,7 +15,7 @@ function CreateCard() {"use strict";
 	 * Container
 	 * @type {Object}
 	 * */
-	this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
+	this.wrapper = Ti.UI.createView(Styles.wrapper);
 
 	this.createCardLabel = Ti.UI.createLabel(Styles.createCardLabel);
 
@@ -60,7 +60,6 @@ function CreateCard() {"use strict";
 	this.imageOptionView.add(this.editImageLabel);
 	this.imageOptionView.add(this.changeImageView);
 	this.imageOptionView.add(this.changeImageLabel);
-
 	this.wrapper.add(this.createCardLabel);
 	this.wrapper.add(this.cardImageView);
 	this.wrapper.add(this.imageOptionView);
