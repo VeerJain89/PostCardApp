@@ -25,6 +25,11 @@ function Preview() {"use strict";
 	this.flipView = Ti.UI.createView(Styles.flipView);
 	this.flipText = Ti.UI.createLabel(Styles.flipText);
 	this.sendbutton = Ti.UI.createButton(Styles.sendbutton);
+	this.addMapView = Ti.UI.createView(Styles.addMapView);
+	this.addMapView.top = '50%';
+	this.addMapView.touchEnabled = 'false';
+	
+	this.postCardView.add(this.addMapView);
 	
 	this.wrapper.add(this.previewLabel);
 	this.wrapper.add(this.postCardView);

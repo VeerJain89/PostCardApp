@@ -88,6 +88,25 @@ function CreateCardController(displayView) {"use strict";
 	APP.tabBar.tabBarView.visible=true;
 	
 	
+	
+	this.WriteMsgUI = new WriteMsgUI();
+	this.PreviewUI = new PreviewUI();
+	
+	//this is to make the location map clickable
+	this.WriteMsgUI.addMapView.addEventListener('click',function(){
+		this.PreviewUI.addMapView.touchEnabled = 'true';
+	});
+	
+	//to open the view showing user location map view
+	this.PreviewUI.addMapView.addEventListener('click',function(){
+		//open the map view
+	});
+	
+	this.WriteMsgUI.addAddressView.addEventListener('click',function(){
+		alert("clicked");
+		APP.navigationObserver(APP.Constants.AddAddressController);
+	});
+	
 }
 
 module.exports = CreateCardController;

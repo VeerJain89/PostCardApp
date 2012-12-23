@@ -76,6 +76,15 @@ var Styles = {
 		height : Ti.Platform.osname==='android'?'26.09%':120,
 		width : Ti.Platform.osname==='android'?'96.87%':280
 	},
+	//view made clickable but transparent to intialize user location map over postCardView on writemsg page
+	addMapView : {
+		left : '50%',
+		top : '75%',
+	},
+	//view to contain user location map
+	userLocationView :{
+		userLocation:true
+	},
 	addMsgView : {
 		left : Ti.Platform.osname==='android'?'15%':45,
 		height : Ti.Platform.osname==='android'?'50%':60,
@@ -189,7 +198,22 @@ var Styles = {
 		height:Ti.UI.SIZE,
 		layout:'vertical',
 		width:180
-	}
+	},
+	
+	//adding textarea for adding message
+	messagetextarea : {
+		backgroundColor : 'white',
+		top : 10 ,
+		left : 0 ,
+		height:Ti.UI.SIZE,
+		width : '50%',
+		layout:'vertical',
+	},
+	
+	
+	//android specific menu to add options to implement paint feature
+	
+	
 };
 
 module.exports = Styles;
