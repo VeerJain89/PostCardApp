@@ -10,6 +10,7 @@ var constants = {
 	HomeController : "HomeController",
 	CreateAccountController : "CreateAccountController",
 	AddAddressController:'AddAddressController',
+	AddMessageController:'AddMessageController',
 	MakePaymentController:'MakePaymentController',
 	ModeOfPaymentSelectionController:'ModeOfPaymentSelectionController',
 	

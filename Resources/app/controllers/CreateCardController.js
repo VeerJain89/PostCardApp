@@ -63,9 +63,41 @@ function CreateCardController(displayView) {"use strict";
 			break;
 		case APP.Constants.WriteMsgView:
 			this.UI = new WriteMsgUI();
+			//to open the addAddressView to enter the address details
+			this.UI.addAddressView.addEventListener('click',function(){
+				APP.navigationObserver(APP.Constants.AddAddressController,APP.Constants.WriteMsgView);
+			});
+			this.UI.addMsgView.addEventListener('click',function(){
+				APP.navigationObserver(APP.Constants.AddMessageController,APP.Constants.WriteMsgView);
+			});
+			//if we can access Preview.js->addMapView to change its property touchEnabled to true
+			this.UI.addMapView.addEventListener('click',function(){
+			//write logic to make touch enabled for preview.js file link for map	
+			});
 			break;
 		case APP.Constants.PreviewView:
 			this.UI = new PreviewUI();
+			
+			this.UI.addMapView.addEventListener('click',function(){
+				var win = Ti.UI.createWindow({
+					modal : 'true',
+					backgroundColor:'white'
+				});
+				win.add(Ti.Map.createView({
+		    	userLocation:true
+				}));
+		 		win.open();
+		 		
+		 		var close = Ti.UI.createButton({
+		 			title : 'Close Map'
+		 		})
+		 		win.add(close);
+		 		close.addEventListener('click',function(){
+		 			win.close();
+		 			APP.navigationObserver(APP.Constants.CreateCardController, APP.Constants.PreviewView)
+		 		});
+			})
+			
 			this.UI.sendbutton.addEventListener('click', function() {
 				APP.tabBar.tabBarView.visible=false;
 				APP.header.signInButton.visible=false;
@@ -87,25 +119,6 @@ function CreateCardController(displayView) {"use strict";
 	APP.header.backButton.visible=false;
 	APP.tabBar.tabBarView.visible=true;
 	
-	
-	
-	this.WriteMsgUI = new WriteMsgUI();
-	this.PreviewUI = new PreviewUI();
-	
-	//this is to make the location map clickable
-	this.WriteMsgUI.addMapView.addEventListener('click',function(){
-		this.PreviewUI.addMapView.touchEnabled = 'true';
-	});
-	
-	//to open the view showing user location map view
-	this.PreviewUI.addMapView.addEventListener('click',function(){
-		//open the map view
-	});
-	
-	this.WriteMsgUI.addAddressView.addEventListener('click',function(){
-		alert("clicked");
-		APP.navigationObserver(APP.Constants.AddAddressController);
-	});
 	
 }
 

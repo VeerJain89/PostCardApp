@@ -91,6 +91,7 @@ function EditImage() {"use strict";
 		}));
 	}
 	
+	/*
 	//****adding paint feature to the selected image******
 	{
 		
@@ -103,7 +104,7 @@ function EditImage() {"use strict";
 		
 		//paintView.backgroundImage = this.cardImageView.image;
 		
-		paintView = this.cardImageView;
+		paintView.backgroundImage = this.cardImageView.image;
 		
 		var buttonStrokeWidth = Ti.UI.createButton({ left:10, height:30, width:'auto', title:'Decrease Stroke Width' });
 		buttonStrokeWidth.addEventListener('click', function(e) {
@@ -111,7 +112,7 @@ function EditImage() {"use strict";
 			e.source.title = (paintView.strokeWidth === 10) ? 'Decrease Stroke Width' : 'Increase Stroke Width';
 		});
 		this.wrapper.add(buttonStrokeWidth);
-		
+		//paintView.
 		var buttonStrokeColorRed = Ti.UI.createButton({ top:10, left:10, width:'auto', height:30, title:'Red' });
 		buttonStrokeColorRed.addEventListener('click', function() { paintView.strokeColor = 'red'; });
 		var buttonStrokeColorGreen = Ti.UI.createButton({ top:10, left:10, width:'auto', height:30, title:'Green' });
@@ -140,7 +141,7 @@ function EditImage() {"use strict";
 		});
 		this.wrapper.add(buttonStrokeColorEraser);
 	}
-	
+	*/
 	
 	
 	this.rotateResizeView.add(this.rotateRightView);

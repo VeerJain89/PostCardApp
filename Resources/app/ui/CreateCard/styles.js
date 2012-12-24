@@ -78,7 +78,7 @@ var Styles = {
 	},
 	//view made clickable but transparent to intialize user location map over postCardView on writemsg page
 	addMapView : {
-		left : '50%',
+		left : '60%',
 		top : '75%',
 	},
 	//view to contain user location map
@@ -200,20 +200,35 @@ var Styles = {
 		width:180
 	},
 	
-	//adding textarea for adding message
-	messagetextarea : {
-		backgroundColor : 'white',
+	//textarea for adding message in addMessage.js
+	messageTextArea : {
 		top : 10 ,
 		left : 0 ,
-		height:Ti.UI.SIZE,
-		width : '50%',
-		layout:'vertical',
+		borderColor : 'blue',
+		width : Ti.Platform.osname==='android'?'100%':290,
+		height : Ti.Platform.osname==='android'?'90%':180,
 	},
 	
+	//nextbutton for the addMessage.js page
+	nextButton : {
+		width : Ti.Platform.osname==='android'?'80%':220,
+		height : Ti.Platform.osname==='android'?'8%':30,
+		backgroundImage : '/app/assets/button.png',
+		title : 'Next'
+	},
 	
-	//android specific menu to add options to implement paint feature
+	//preview image
+	previewImage : {
+		width : Ti.Platform.osname==='android'?'12%':220,
+		height : Ti.Platform.osname==='android'?'10%':30,
+		top : Ti.Platform.osname==='android'?'8%':30,
+		left : Ti.Platform.osname==='android'?'30%':30
+	},
 	
-	
+	//preview message and address view
+	previewMsgAddr : {
+		
+	}
 };
 
 module.exports = Styles;

@@ -26,10 +26,16 @@ function Preview() {"use strict";
 	this.flipText = Ti.UI.createLabel(Styles.flipText);
 	this.sendbutton = Ti.UI.createButton(Styles.sendbutton);
 	this.addMapView = Ti.UI.createView(Styles.addMapView);
+	this.previewImage = Ti.UI.createView(Styles.previewImage);
+	this.previewMsgAddr = Ti.UI.createView(Styles.previewMsgAddr);
 	this.addMapView.top = '50%';
-	this.addMapView.touchEnabled = 'false';
+	//this.addMapView.touchEnabled = 'false';
 	
 	this.postCardView.add(this.addMapView);
+	
+	//below 2 views are clickable to enable flipping between image and msg views
+	this.flipView.add(this.previewImage);
+	this.flipView.add(this.previewMsgAddr);
 	
 	this.wrapper.add(this.previewLabel);
 	this.wrapper.add(this.postCardView);

@@ -14,7 +14,9 @@ function AddAddressController() {
      * @type {Object}
      */
     this.UI = new UI();
-	
+	this.UI.nextButton.addEventListener('click',function(){
+				APP.navigationObserver(APP.Constants.CreateCardController,APP.Constants.WriteMsgView);
+			});
 	APP.header.signInButton.visible=false;
 	APP.header.backButton.visible=true;
 	APP.tabBar.tabBarView.visible=false;

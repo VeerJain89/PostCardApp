@@ -46,9 +46,8 @@ function WriteMsg() {"use strict";
 	
 	//if we can access Preview.js->addMapView to change its property touchEnabled to true
 	this.addMapView.addEventListener('click',function(){
-		
+		//alert('.js file alert');
 	})
-	
 	
 	this.wrapper.add(this.writeMsgLabel);
 	this.wrapper.add(this.postCardView);
