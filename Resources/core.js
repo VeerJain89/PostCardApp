@@ -23,6 +23,7 @@ var APP = {
 	 * @type {Object}
 	 */
 	currentController : null,
+	
 	/**
 	 * Sets the current orientation of the device constant
 	 * @type {String}
@@ -115,7 +116,7 @@ var APP = {
 	    "use strict";
 		if ( typeof (controller) !== "undefined") {			
 		    //check for global events
-		    if(APP.currentController.UI.removeGlobalEvents != null){
+		    if(APP.currentController.UI && APP.currentController.UI.removeGlobalEvents != null){
 		        APP.currentController.UI.removeGlobalEvents();
 		    }
 			APP.currentControllerId = controller;
