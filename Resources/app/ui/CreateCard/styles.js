@@ -82,9 +82,9 @@ var Styles = {
 		top : '75%',
 	},
 	//view to contain user location map
-	userLocationView :{
-		userLocation:true
-	},
+	//userLocationView :{
+	//	userLocation:true
+	//},
 	addMsgView : {
 		left : Ti.Platform.osname==='android'?'15%':45,
 		height : Ti.Platform.osname==='android'?'50%':60,
@@ -174,7 +174,7 @@ var Styles = {
 	sendbutton:{
 		top : 20,
 		width : Ti.Platform.osname==='android'?'68%':220,
-		height : 30,
+		height : Ti.Platform.osname==='android'?'8%':30,
 		backgroundColor : 'orange',
 		title : 'Send'
 	},
