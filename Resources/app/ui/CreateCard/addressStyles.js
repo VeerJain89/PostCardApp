@@ -24,6 +24,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'First Name'
 	},
 	lNameText : {
@@ -31,6 +34,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'Last Name'
 	},
 	address1Text : {
@@ -38,6 +44,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'Address Line 1'
 	},
 	address2Text : {
@@ -45,6 +54,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'Address Line 2'
 	},
 	address3Text : {
@@ -52,6 +64,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'Address Line 3'
 	},
 	cityText : {
@@ -59,6 +74,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'City'
 	},
 	stateText : {
@@ -66,6 +84,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'State'
 	},
 	zipText : {
@@ -73,6 +94,9 @@ var Styles = {
 		top : Ti.Platform.osname==='android'?'2%':7,
 		width : Ti.Platform.osname==='android'?'87.50%':280,
 		height : Ti.Platform.osname==='android'?'8%':30,
+		font : {
+			fontSize :  16
+		},
 		hintText : 'Postal/Zip Code'
 	},
 	nextButton : {

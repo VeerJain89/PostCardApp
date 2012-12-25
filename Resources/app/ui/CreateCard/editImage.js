@@ -1,7 +1,7 @@
 // Module dependencies
 var Styles = require('app/ui/CreateCard/styles');
 var APP = require('core');
-var Paint = require('ti.paint');
+//var Paint = require('ti.paint');
 var httpHelper = require('modules/http');
 /**
  * The main view for this screen
