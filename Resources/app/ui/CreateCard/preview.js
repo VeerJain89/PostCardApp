@@ -19,8 +19,8 @@ function Preview() {"use strict";
     
 	this.previewLabel = Ti.UI.createLabel(Styles.previewLabel);
 	
-	this.postCardView = Ti.UI.createView(Styles.postCardView);
-	this.postCardView.backgroundImage='/app/assets/postaddress.png';
+	this.postCardView = Ti.UI.createImageView(Styles.postCardView);
+	this.postCardView.image='/app/assets/postaddress.png';
 	
 	this.flipView = Ti.UI.createView(Styles.flipView);
 	this.flipText = Ti.UI.createLabel(Styles.flipText);
@@ -31,6 +31,23 @@ function Preview() {"use strict";
 	this.addMapView.top = '50%';
 	//this.addMapView.touchEnabled = 'false';
 	
+	this.messageLabel=Ti.UI.createLabel({
+		top:10,
+		left:5,
+		height:'200dp',
+		width:'140dp',
+		font:{
+			fontSize:12
+		},
+		color:'black',
+		backgroundColor:'red'
+	});
+	
+	if(APP.message){
+		this.messageLabel.text=APP.message;
+	}
+	
+	this.postCardView.add(this.messageLabel);
 	this.postCardView.add(this.addMapView);
 	
 	//below 2 views are clickable to enable flipping between image and msg views
@@ -39,11 +56,13 @@ function Preview() {"use strict";
 	
 	//display the image preview of the postcard
 	this.previewImage.addEventListener('click',function(){
+		self.postCardView.image=APP.image;
 		alert('previewimage clicked');
 	})
 	
 	//display the message preview of the postcard
 	this.previewMsgAddr.addEventListener('click',function(){
+		self.postCardView.image='/app/assets/postaddress.png';
 		alert('previewmsgaddr clicked');
 	})
 	

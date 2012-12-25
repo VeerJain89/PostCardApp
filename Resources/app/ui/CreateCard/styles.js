@@ -67,7 +67,6 @@ var Styles = {
 		text : 'Write Message'
 	},
 	postCardView : {
-		backgroundImage : '/app/assets/postcard.png',
 		width : Ti.Platform.osname==='android'?'90.62%':290,
 		height : Ti.Platform.osname==='android'?'50%':180,
 		top : 10
@@ -207,6 +206,7 @@ var Styles = {
 		borderColor : 'blue',
 		width : Ti.Platform.osname==='android'?'100%':290,
 		height : Ti.Platform.osname==='android'?'90%':180,
+		suppressReturn:false
 	},
 	
 	//nextbutton for the addMessage.js page
@@ -219,18 +219,18 @@ var Styles = {
 	
 	//preview image
 	previewImage : {
-		width : Ti.Platform.osname==='android'?'40%':220,
-		height : Ti.Platform.osname==='android'?'100%':30,
-		top : Ti.Platform.osname==='android'?'8%':30,
-		left : Ti.Platform.osname==='android'?'60%':0,
+		width : '40%',
+		height : '100%',
+		top : Ti.Platform.osname==='android'?'8%':0,
+		left : '60%'
 	},
 	
 	//preview message and address view
 	previewMsgAddr : {
-		width : Ti.Platform.osname==='android'?'40%':220,
-		height : Ti.Platform.osname==='android'?'100%':30,
-		top : Ti.Platform.osname==='android'?'8%':30,
-		left : Ti.Platform.osname==='android'?0:0,
+		width : '40%',
+		height : '100%',
+		top : Ti.Platform.osname==='android'?'8%':0,
+		left : 0
 	}
 };
 
