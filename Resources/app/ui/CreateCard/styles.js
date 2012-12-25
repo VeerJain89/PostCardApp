@@ -219,15 +219,18 @@ var Styles = {
 	
 	//preview image
 	previewImage : {
-		width : Ti.Platform.osname==='android'?'12%':220,
-		height : Ti.Platform.osname==='android'?'10%':30,
+		width : Ti.Platform.osname==='android'?'40%':220,
+		height : Ti.Platform.osname==='android'?'100%':30,
 		top : Ti.Platform.osname==='android'?'8%':30,
-		left : Ti.Platform.osname==='android'?'30%':30
+		left : Ti.Platform.osname==='android'?'60%':0,
 	},
 	
 	//preview message and address view
 	previewMsgAddr : {
-		
+		width : Ti.Platform.osname==='android'?'40%':220,
+		height : Ti.Platform.osname==='android'?'100%':30,
+		top : Ti.Platform.osname==='android'?'8%':30,
+		left : Ti.Platform.osname==='android'?0:0,
 	}
 };
 

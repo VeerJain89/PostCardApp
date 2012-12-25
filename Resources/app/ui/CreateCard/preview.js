@@ -37,6 +37,16 @@ function Preview() {"use strict";
 	this.flipView.add(this.previewImage);
 	this.flipView.add(this.previewMsgAddr);
 	
+	//display the image preview of the postcard
+	this.previewImage.addEventListener('click',function(){
+		alert('previewimage clicked');
+	})
+	
+	//display the message preview of the postcard
+	this.previewMsgAddr.addEventListener('click',function(){
+		alert('previewmsgaddr clicked');
+	})
+	
 	this.wrapper.add(this.previewLabel);
 	this.wrapper.add(this.postCardView);
 	this.wrapper.add(this.flipView);
