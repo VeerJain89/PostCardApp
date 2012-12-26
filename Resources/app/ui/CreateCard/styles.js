@@ -122,31 +122,47 @@ var Styles = {
 		backgroundColor:'Orange',
 		color:'white',
 		font:{
-			fontSize:16,
+			fontSize:Ti.Platform.osname==='android'?30:16,
 			fontWeight:'bold'
 		},
-		width:180
+		width:Ti.Platform.osname==='android'?'100%':180,
+		textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
 	},
 	takePhotoButton : {
-		width:180,
-		height:35,
+		width:Ti.Platform.osname==='android'?'80%':180,
+		height:Ti.Platform.osname==='android'?'20%':35,
+		left : Ti.Platform.osname==='android'?'10%':10,
+		font:{
+			fontSize:Ti.Platform.osname==='android'?30:16,
+			//fontWeight:'bold'
+		},
 		text:'Take Picture',
 		backgroundColor:'white',
 		borderColor:'orange'
 	},
 	galleryButton :{
-		width:180,
-		height:35,
+		width:Ti.Platform.osname==='android'?'80%':180,
+		height:Ti.Platform.osname==='android'?'20%':35,
+		left : Ti.Platform.osname==='android'?'10%':10,
+		font:{
+			fontSize:Ti.Platform.osname==='android'?30:16,
+			//fontWeight:'bold'
+		},
 		text:'Gallery',
 		backgroundColor:'white',
 		borderColor:'orange'
 	},
 	facebookButton : {
-		width:180,
-		height:35,
+		width:Ti.Platform.osname==='android'?'80%':180,
+		height:Ti.Platform.osname==='android'?'20%':35,
+		left : Ti.Platform.osname==='android'?'10%':10,
 		text:'Facebook',
+		font:{
+			fontSize:Ti.Platform.osname==='android'?30:16,
+			//fontWeight:'bold'
+		},
 		backgroundColor:'white',
-		borderColor:'orange'
+		borderColor:'black'
 	},
 	editImageText : {
 		top : 10,
@@ -194,9 +210,10 @@ var Styles = {
 	},
 	optionsView : {
 		backgroundColor : 'white',
-		height:Ti.UI.SIZE,
+		height:Ti.Platform.osname==='android'?'100%':Ti.UI.SIZE,
 		layout:'vertical',
-		width:180
+		width:Ti.Platform.osname==='android'?'100%':180,
+		//bottom : Ti.Platform.osname==='android'?'15%':20
 	},
 	
 	//textarea for adding message in addMessage.js
