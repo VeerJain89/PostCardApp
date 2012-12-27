@@ -4,60 +4,60 @@
  */
 var Styles = {
     wrapper : {
-        top:Ti.Platform.osname==='android'?'11%':50,
+        top:'50dp',
         layout : 'vertical',
-        width:Ti.Platform.osname==='android'?'96%':310,
+        width:'310dp',
         backgroundColor:'white',
-        bottom:10
+        bottom:'10dp'
     },
     myAccountLabel:{
-		top : Ti.Platform.osname==='android'?'2.5%':10,
-		left : 10,
+		top : '10dp',
+		left : '10dp',
 		color : 'orange',
 		font : {
-			fontSize : 24
+			fontSize : '24dp'
 		},
 		text : 'My Account'
 	},
     emailLabel:{
-		top : Ti.Platform.osname==='android'?'7.3%':30,
-		left : 20,
+		top : '30dp',
+		left : '20dp',
 		text : 'Email Address'
 	},
     emailText:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : Ti.Platform.osname==='android'?'2%':5,
-		width : Ti.Platform.osname==='android'?'87%':280,
-		height : 30
+		top : '5dp',
+		width : '280dp',
+		height : '30dp'
 	},
     passwordLabel:{
-		top : Ti.Platform.osname==='android'?'2%':5,
-		left : 20,
+		top : '5dp',
+		left : '20dp',
 		text : 'Email Address'
 	},
     passwordText:{
 		backgroundImage : '/app/assets/textBox.png',
-		top : Ti.Platform.osname==='android'?'2%':5,
-		width : Ti.Platform.osname==='android'?'87%':280,
-		height : 30
+		top : '5dp',
+		width : '280dp',
+		height : '30dp'
 	},
     signInButton:{
-		top : Ti.Platform.osname==='android'?'4%':10,
-		width : Ti.Platform.osname==='android'?'68%':220,
-		height : 30,
+		top : '10dp',
+		width : '220dp',
+		height : '30dp',
 		backgroundImage : '/app/assets/button.png',
 		title : 'Sign In'
 	},
     separator:{
 		backgroundImage:'/app/assets/separator.png',
-		height:6,
-		width:Ti.Platform.osname==='android'?'93%':300,
-		top:Ti.Platform.osname==='android'?'4%':10
+		height:'6dp',
+		width:'300dp',
+		top:'10dp'
 	},
     createNewButton:{
-		top : Ti.Platform.osname==='android'?'4%':10,
-		width : Ti.Platform.osname==='android'?'68%':220,
-		height : 30,
+		top : '10dp',
+		width : '220dp',
+		height : '30dp',
 		backgroundImage : '/app/assets/button.png',
 		title : 'Create New Account'
 	},

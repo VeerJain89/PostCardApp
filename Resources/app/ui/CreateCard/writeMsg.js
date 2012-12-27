@@ -21,6 +21,7 @@ function WriteMsg() {"use strict";
 	this.writeMsgLabel = Ti.UI.createLabel(Styles.writeMsgLabel);
 	
 	this.postCardView = Ti.UI.createView(Styles.postCardBack);
+	this.postCardView.backgroundImage = '/app/assets/postcard.png';
 	
 	this.messageView = Ti.UI.createView(Styles.messageView);
 	
