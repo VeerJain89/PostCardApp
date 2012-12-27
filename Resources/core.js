@@ -23,6 +23,8 @@ var APP = {
 	 * @type {Object}
 	 */
 	currentController : null,
+	message : null,
+	address : null,
 	
 	/**
 	 * Sets the current orientation of the device constant

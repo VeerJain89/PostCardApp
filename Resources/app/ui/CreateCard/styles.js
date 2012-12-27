@@ -66,10 +66,14 @@ var Styles = {
 		},
 		text : 'Write Message'
 	},
-	postCardView : {
+	postCardBack : {
 		width : Ti.Platform.osname==='android'?'90.62%':290,
 		height : Ti.Platform.osname==='android'?'50%':180,
 		top : 10
+	},
+	postCardView : {
+		width : '100%',
+		height : '100%',
 	},
 	messageView : {
 		height : Ti.Platform.osname==='android'?'26.09%':120,
@@ -248,6 +252,27 @@ var Styles = {
 		height : '100%',
 		top : Ti.Platform.osname==='android'?'8%':0,
 		left : 0
+	},
+	addressLabel:{
+		top:'30dp',
+		right:'10dp',
+		height:'80dp',
+		width:'110dp',
+		font:{
+			fontSize:'12dp'
+		},
+		color:'black',
+		zIndex:100
+	},
+	messageLabel:{
+		left:'10dp',
+		height:'140dp',
+		width:'140dp',
+		font:{
+			fontSize:'12dp'
+		},
+		color:'black',
+		zIndex:100
 	}
 };
 

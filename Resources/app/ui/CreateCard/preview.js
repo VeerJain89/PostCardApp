@@ -19,6 +19,7 @@ function Preview() {"use strict";
     
 	this.previewLabel = Ti.UI.createLabel(Styles.previewLabel);
 	
+	this.postCardBack = Ti.UI.createView(Styles.postCardBack);
 	this.postCardView = Ti.UI.createImageView(Styles.postCardView);
 	this.postCardView.image='/app/assets/postaddress.png';
 	
@@ -31,24 +32,17 @@ function Preview() {"use strict";
 	this.addMapView.top = '50%';
 	//this.addMapView.touchEnabled = 'false';
 	
-	this.messageLabel=Ti.UI.createLabel({
-		top:10,
-		left:5,
-		height:'200dp',
-		width:'140dp',
-		font:{
-			fontSize:12
-		},
-		color:'black',
-		backgroundColor:'red'
-	});
+	this.messageLabel=Ti.UI.createLabel(Styles.messageLabel);
+	
+	this.addressLabel=Ti.UI.createLabel(Styles.addressLabel);
 	
 	if(APP.message){
 		this.messageLabel.text=APP.message;
 	}
+	if(APP.address){
+		this.addressLabel.text=APP.address;
+	}
 	
-	this.postCardView.add(this.messageLabel);
-	this.postCardView.add(this.addMapView);
 	
 	//below 2 views are clickable to enable flipping between image and msg views
 	this.flipView.add(this.previewImage);
@@ -56,18 +50,25 @@ function Preview() {"use strict";
 	
 	//display the image preview of the postcard
 	this.previewImage.addEventListener('click',function(){
+		self.messageLabel.visible=false;
+		self.addressLabel.visible=false;
 		self.postCardView.image=APP.image;
-		alert('previewimage clicked');
 	})
 	
 	//display the message preview of the postcard
 	this.previewMsgAddr.addEventListener('click',function(){
+		self.messageLabel.visible=true;
+		self.addressLabel.visible=true;
 		self.postCardView.image='/app/assets/postaddress.png';
-		alert('previewmsgaddr clicked');
 	})
 	
+	this.postCardBack.add(this.postCardView);
+	this.postCardBack.add(this.messageLabel);
+	this.postCardBack.add(this.addressLabel);
+	this.postCardBack.add(this.addMapView);
+	
 	this.wrapper.add(this.previewLabel);
-	this.wrapper.add(this.postCardView);
+	this.wrapper.add(this.postCardBack);
 	this.wrapper.add(this.flipView);
 	this.wrapper.add(this.flipText);
 	this.wrapper.add(this.sendbutton);

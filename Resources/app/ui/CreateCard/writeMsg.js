@@ -20,7 +20,7 @@ function WriteMsg() {"use strict";
     
 	this.writeMsgLabel = Ti.UI.createLabel(Styles.writeMsgLabel);
 	
-	this.postCardView = Ti.UI.createView(Styles.postCardView);
+	this.postCardView = Ti.UI.createView(Styles.postCardBack);
 	
 	this.messageView = Ti.UI.createView(Styles.messageView);
 	
