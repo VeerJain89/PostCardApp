@@ -10,6 +10,13 @@ var Styles = {
 		backgroundColor : 'white',
 		height : Ti.Platform.osname==='android'?'86.96%':400
 	},
+	phoneBookView:{
+		backgroundColor : 'red',
+		top : '-40dp',
+		height : '40dp',
+		width : '40dp',
+		right : '50dp'
+	},
 	addAddressLabel : {
 		top : 10,
 		left : 10,
