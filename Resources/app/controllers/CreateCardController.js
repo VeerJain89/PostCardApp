@@ -99,15 +99,26 @@ function CreateCardController(displayView) {"use strict";
 			})
 			
 			this.UI.sendbutton.addEventListener('click', function() {
-				APP.tabBar.tabBarView.visible=false;
-				APP.header.signInButton.visible=false;
-				APP.header.backButton.visible=true;
-			APP.navigationObserver(APP.Constants.ModeOfPaymentSelectionController);
+				APP.tabBar.tabBarView.visible = false;
+				APP.header.signInButton.visible = false;
+				APP.header.backButton.visible = true;
+
+				var tempFile = Titanium.Filesystem.getFile(Titanium.Filesystem.applicationDataDirectory, './camera_photo.jpg');
+				tempFile.write(APP.image);
+
+				var emailDialog = Titanium.UI.createEmailDialog();
+				emailDialog.subject = '';
+				emailDialog.toRecipients = [''];
+				emailDialog.messageBody = 'This was taken at: ';
+				emailDialog.addAttachment(tempFile);
+				emailDialog.open();
+
+				APP.navigationObserver(APP.Constants.ModeOfPaymentSelectionController);
 			});
 			break;
-	
-	}
-	
+
+			}
+
 	APP.currentView = displayView;
 	if (!APP.header) {
 		var HeaderUI = new Header();
