@@ -15,7 +15,7 @@ function AddAddressController() {"use strict";
 	this.UI = new UI();
 	
 	
-	this.UI.phoneBookView.addEventListener('click', function() {
+	this.UI.phoneBookLabel.addEventListener('click', function() {
 		Ti.Contacts.showContacts({
 			selectedPerson : function(e) {
 				self.UI.fNameText.value=Ti.Android?e.person.fullName:e.person.firstName;

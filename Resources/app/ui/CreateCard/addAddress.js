@@ -16,7 +16,7 @@ function AddAddressUI() {"use strict";
 
 	this.addAddressLabel = Ti.UI.createLabel(Styles.addAddressLabel);
 
-	this.phoneBookView = Ti.UI.createView(Styles.phoneBookView);
+	this.phoneBookLabel = Ti.UI.createLabel(Styles.phoneBookLabel);
 
 	this.fNameText = Ti.UI.createTextField(Styles.fNameText);
 	
@@ -37,7 +37,7 @@ function AddAddressUI() {"use strict";
 	this.nextButton = Ti.UI.createButton(Styles.nextButton);
 
 	this.wrapper.add(this.addAddressLabel);
-	this.wrapper.add(this.phoneBookView);
+	this.wrapper.add(this.phoneBookLabel);
 	this.wrapper.add(this.fNameText);
 	this.wrapper.add(this.lNameText);
 	this.wrapper.add(this.address1Text);

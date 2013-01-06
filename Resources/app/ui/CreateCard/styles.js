@@ -226,12 +226,22 @@ var Styles = {
 		left : 0 ,
 		borderColor : 'blue',
 		width : Ti.Platform.osname==='android'?'100%':290,
-		height : Ti.Platform.osname==='android'?'90%':180,
+		height : Ti.Platform.osname==='android'?'60%':120,
 		suppressReturn:false
+	},
+	
+	//view for the signature of the sender
+	signatureView : {
+		//top : 10 ,
+		left : 0 ,
+		backgroundColor : 'blue',
+		width : Ti.Platform.osname==='android'?'100%':290,
+		height : Ti.Platform.osname==='android'?'20%':40,
 	},
 	
 	//nextbutton for the addMessage.js page
 	nextButton : {
+		top : '10dp',
 		width : Ti.Platform.osname==='android'?'80%':220,
 		height : Ti.Platform.osname==='android'?'8%':30,
 		backgroundImage : '/app/assets/button.png',
