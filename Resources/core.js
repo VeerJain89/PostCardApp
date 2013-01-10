@@ -126,7 +126,12 @@ var APP = {
 			APP.removeCurrentScreen(function() {
 				var Controller = require(APP.Constants.controllerPath + APP.currentControllerId);
 				APP.currentController = new Controller(displayUI);
+				APP.currentController.UI.wrapper.left='100%';
 				APP.masterWindow.add(APP.currentController.UI.wrapper);
+				APP.currentController.UI.wrapper.animate(Ti.UI.createAnimation({
+					left:'5dp',
+					duration:500
+				}));
 			});
 		} else {
 			Ti.API.info("@APP.handleNavigation() - Index is undefined");

@@ -108,7 +108,7 @@ function CreateCardController(displayView) {"use strict";
 
 				var emailDialog = Titanium.UI.createEmailDialog();
 				emailDialog.subject = '';
-				emailDialog.toRecipients = [''];
+				emailDialog.toRecipients = ['abc@xyz.com'];
 				emailDialog.messageBody = 'This was taken at: ';
 				emailDialog.addAttachment(tempFile);
 				emailDialog.open();
