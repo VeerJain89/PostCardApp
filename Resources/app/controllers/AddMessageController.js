@@ -15,6 +15,7 @@ function AddMessageController() {"use strict";
 	this.UI = new UI();
 	this.UI.nextButton.addEventListener('click', function() {
 		APP.message = self.UI.messageTextArea.value;
+		APP.signature = self.UI.signatureView;
 		APP.navigationObserver(APP.Constants.CreateCardController, APP.Constants.WriteMsgView);
 	});
 	APP.header.signInButton.visible = false;

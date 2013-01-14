@@ -223,11 +223,9 @@ var Styles = {
 	//textarea for adding message in addMessage.js
 	messageTextArea : {
 		top : 10 ,
-		left : 0 ,
 		borderColor : 'blue',
 		width : Ti.Platform.osname==='android'?'100%':290,
-		height : Ti.Platform.osname==='android'?'60%':120,
-		suppressReturn:false
+		height : Ti.Platform.osname==='android'?'60%':120
 	},
 	
 	//view for the signature of the sender
