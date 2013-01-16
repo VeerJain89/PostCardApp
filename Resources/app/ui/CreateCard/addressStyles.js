@@ -11,7 +11,7 @@ var Styles = {
 		height : Ti.Platform.osname==='android'?'86.96%':400
 	},
 	phoneBookLabel:{
-		backgroundColor : 'blue',
+		backgroundColor : 'orange',
 		text : 'Phonebook',
 		top : '-40dp',
 		height : '40dp',

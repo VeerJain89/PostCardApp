@@ -232,7 +232,7 @@ var Styles = {
 	signatureView : {
 		//top : 10 ,
 		left : 0 ,
-		backgroundColor : 'blue',
+		backgroundColor : 'orange',
 		width : Ti.Platform.osname==='android'?'100%':290,
 		height : Ti.Platform.osname==='android'?'20%':40,
 	},

@@ -17,7 +17,7 @@ function AddMessageUI() {"use strict";
 	
 	this.messageTextArea = Ti.UI.createTextArea(Styles.messageTextArea);
 	
-	//this.signatureView = Ti.UI.createView(Styles.signatureView);
+	this.signatureView = Ti.UI.createView(Styles.signatureView);
 	
 	this.nextButton = Ti.UI.createButton(Styles.nextButton);
 	
@@ -27,11 +27,11 @@ function AddMessageUI() {"use strict";
 	
 	//paint module to sign the message
 	this.signatureView = Paint.createPaintView({
-		backgroundColor : 'blue',
+		backgroundColor : 'orange',
 		width : Ti.Platform.osname==='android'?'100%':290,
 		height : Ti.Platform.osname==='android'?'20%':40,
 		// strokeWidth (float), strokeColor (string), strokeAlpha (int, 0-255)
-	    strokeColor:'#0f0', strokeAlpha:255, strokeWidth:10,
+	    strokeColor:'white', strokeAlpha:255, strokeWidth:10,
 	    eraseMode:false
 	});
 	//win.add(paintView);
@@ -39,8 +39,8 @@ function AddMessageUI() {"use strict";
 	
 	var buttonStrokeWidth = Ti.UI.createButton({ left:10, bottom:10, right:10, height:30, title:'Decrease Stroke Width' });
 	buttonStrokeWidth.addEventListener('click', function(e) {
-		signatureView.strokeWidth = (signatureView.strokeWidth === 5) ? 2 : 5;
-		e.source.title = (signatureView.strokeWidth === 5) ? 'Decrease Stroke Width' : 'Increase Stroke Width';
+		this.signatureView.strokeWidth = (this.signatureView.strokeWidth === 5) ? 2 : 5;
+		e.source.title = (this.signatureView.strokeWidth === 5) ? 'Decrease Stroke Width' : 'Increase Stroke Width';
 	});
 	this.wrapper.add(buttonStrokeWidth);
 	
@@ -55,20 +55,20 @@ function AddMessageUI() {"use strict";
 	win.add(buttonStrokeColorBlue);*/
 	
 	var clear = Ti.UI.createButton({ top:10,left:10, width:'24%', height:30, title:'Clear' });
-	clear.addEventListener('click', function() { signatureView.clear(); });
+	clear.addEventListener('click', function() { this.signatureView.clear(); });
 	this.wrapper.add(clear);
 	
 	var buttonStrokeAlpha = Ti.UI.createButton({ top:-30,left:'27%', width:'auto', height:30, title:'Alpha : 100%' });
 	buttonStrokeAlpha.addEventListener('click', function(e) {
-		signatureView.strokeAlpha = (signatureView.strokeAlpha === 255) ? 127 : 255;
-		e.source.title = (signatureView.strokeAlpha === 255) ? 'Alpha : 100%' : 'Alpha : 50%';
+		this.signatureView.strokeAlpha = (this.signatureView.strokeAlpha === 255) ? 127 : 255;
+		e.source.title = (this.signatureView.strokeAlpha === 255) ? 'Alpha : 100%' : 'Alpha : 50%';
 	});
 	this.wrapper.add(buttonStrokeAlpha);
 	
 	var buttonStrokeColorEraser = Ti.UI.createButton({ top:-30,right:10, width:'auto', height:30, title:'Erase : Off' });
 	buttonStrokeColorEraser.addEventListener('click', function(e) {
-		signatureView.eraseMode = (signatureView.eraseMode) ? false : true;
-		e.source.title = (signatureView.eraseMode) ? 'Erase : On' : 'Erase : Off';
+		this.signatureView.eraseMode = (this.signatureView.eraseMode) ? false : true;
+		e.source.title = (this.signatureView.eraseMode) ? 'Erase : On' : 'Erase : Off';
 	});
 	this.wrapper.add(buttonStrokeColorEraser);
 	
