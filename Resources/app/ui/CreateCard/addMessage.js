@@ -55,7 +55,7 @@ function AddMessageUI() {"use strict";
 	win.add(buttonStrokeColorBlue);*/
 	
 	var clear = Ti.UI.createButton({ top:10,left:10, width:'24%', height:30, title:'Clear' });
-	clear.addEventListener('click', function() { this.signatureView.clear(); });
+	clear.addEventListener('click', function() { self.signatureView.clear(); });
 	this.wrapper.add(clear);
 	
 	var buttonStrokeAlpha = Ti.UI.createButton({ top:-30,left:'27%', width:'auto', height:30, title:'Alpha : 100%' });
