@@ -13,6 +13,11 @@ function AddMessageController() {"use strict";
 	 * @type {Object}
 	 */
 	this.UI = new UI();
+	
+	if(APP.message){
+		self.UI.messageTextArea.value = APP.message;
+	}
+	
 	this.UI.nextButton.addEventListener('click', function() {
 		APP.message = self.UI.messageTextArea.value;
 		APP.signature = self.UI.signatureView;
