@@ -15,7 +15,11 @@ function Home() {"use strict";
      * Container
      * @type {Object}
      * */
-    this.wrapper = Ti.UI.createScrollView(Styles.wrapper);
+    this.wrapper = Ti.UI.createView(Styles.wrapper);
+	
+	this.fbView = Ti.UI.createView(Styles.fbView);
+	
+	this.mainView = Ti.UI.createScrollView(Styles.mainView);
 	
 	this.headerView = Ti.UI.createView(Styles.headerView);
 	
@@ -27,11 +31,14 @@ function Home() {"use strict";
 	
 	this.checkAccountView = Ti.UI.createView(Styles.checkAccountView);
 	
-	this.wrapper.add(this.headerView);
-	this.wrapper.add(this.descriptionImage);
-	this.wrapper.add(this.createCardView);
-	this.wrapper.add(this.postBoxView);
-	this.wrapper.add(this.checkAccountView);
+	this.wrapper.add(this.fbView);
+	this.wrapper.add(this.mainView);
+	
+	this.mainView.add(this.headerView);
+	this.mainView.add(this.descriptionImage);
+	this.mainView.add(this.createCardView);
+	this.mainView.add(this.postBoxView);
+	this.mainView.add(this.checkAccountView);
 }
 
 module.exports = Home;

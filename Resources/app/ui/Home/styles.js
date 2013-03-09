@@ -5,8 +5,20 @@
 var Styles = {
 	wrapper : {
         top:0,
+        height:'100%',
+        width:'100%',
+        backgroundColor:'white'
+    },
+    fbView:{
+    	backgroundImage:'/app/assets/facebook_login.png',
+    	height:'56dp',
+    	width:'275dp'
+    },
+    mainView:{
+    	top:0,
+    	visible:false,
         layout : 'vertical',
-        width:'320dp',
+        width:'100%',
         backgroundColor:'white'
     },
     headerView:{
